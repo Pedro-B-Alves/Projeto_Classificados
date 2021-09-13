@@ -5859,19 +5859,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pedro\\.nuget\\packages\\": {}
+    "C:\\Users\\R4f4e\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\ProjetoClassificados.Infra.Data.csproj",
+      "projectUniqueName": "C:\\Users\\R4f4e\\OneDrive\\Área de Trabalho\\Nova pasta\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\ProjetoClassificados.Infra.Data.csproj",
       "projectName": "ProjetoClassificados.Infra.Data",
-      "projectPath": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\ProjetoClassificados.Infra.Data.csproj",
-      "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\obj\\",
+      "projectPath": "C:\\Users\\R4f4e\\OneDrive\\Área de Trabalho\\Nova pasta\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\ProjetoClassificados.Infra.Data.csproj",
+      "packagesPath": "C:\\Users\\R4f4e\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\R4f4e\\OneDrive\\Área de Trabalho\\Nova pasta\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\R4f4e\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5885,8 +5885,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Dominio\\ProjetoClassificados.Dominio.csproj": {
-              "projectPath": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Dominio\\ProjetoClassificados.Dominio.csproj"
+            "C:\\Users\\R4f4e\\OneDrive\\Área de Trabalho\\Nova pasta\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Dominio\\ProjetoClassificados.Dominio.csproj": {
+              "projectPath": "C:\\Users\\R4f4e\\OneDrive\\Área de Trabalho\\Nova pasta\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Dominio\\ProjetoClassificados.Dominio.csproj"
             }
           }
         }
@@ -5941,7 +5941,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.303\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
       }
     }
   }

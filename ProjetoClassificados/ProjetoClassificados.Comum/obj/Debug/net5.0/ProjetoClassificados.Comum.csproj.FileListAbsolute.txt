@@ -10,3 +10,15 @@ A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\Pro
 A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.dll
 A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ref\ProjetoClassificados.Comum.dll
 A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.pdb
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\bin\Debug\net5.0\ProjetoClassificados.Comum.deps.json
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\bin\Debug\net5.0\ProjetoClassificados.Comum.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\bin\Debug\net5.0\ref\ProjetoClassificados.Comum.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\bin\Debug\net5.0\ProjetoClassificados.Comum.pdb
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.csprojAssemblyReference.cache
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.AssemblyInfoInputs.cache
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.AssemblyInfo.cs
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.csproj.CoreCompileInputs.cache
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ref\ProjetoClassificados.Comum.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.pdb

@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ON+ltiXv6lhM60t2lFB4DkNo4xkdmFS9sctOPW9dAioSy/gcYrPJ1FuKSgZguREvAt/B5kTP1wn2MHBODN7JbQ==",
+  "dgSpecHash": "kPfq4JjcvyWWOFiVdggN0r+bjOzKtPDsXgokMBfFj76A65fzb/WcmViRgk0RU65kY9lghCACcMFfkti285e5Dg==",
   "success": true,
-  "projectFilePath": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Comum\\ProjetoClassificados.Comum.csproj",
+  "projectFilePath": "C:\\Users\\R4f4e\\OneDrive\\Área de Trabalho\\Nova pasta\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Comum\\ProjetoClassificados.Comum.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\pedro\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+    "C:\\Users\\R4f4e\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
   ],
   "logs": []
 }
