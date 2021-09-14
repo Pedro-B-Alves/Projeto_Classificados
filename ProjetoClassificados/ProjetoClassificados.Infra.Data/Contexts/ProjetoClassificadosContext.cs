@@ -17,6 +17,7 @@ namespace ProjetoClassificados.Infra.Data.Contexts
         }
 
         public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Anuncio> Anuncios { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -56,6 +57,41 @@ namespace ProjetoClassificados.Infra.Data.Contexts
             modelBuilder.Entity<Usuario>().Property(x => x.Estado).IsRequired();
 
             modelBuilder.Entity<Usuario>().Property(x => x.DataCriacao).HasColumnType("DateTime");
+
+            #endregion
+
+            #region Mapeamento de tabela de Anuncios
+
+            // Muda o nome da tabela para o plural
+            modelBuilder.Entity<Anuncio>().ToTable("Anuncios");
+
+            // Id - Como está como Id, ele automaticamente indentificará que é chave primária
+            modelBuilder.Entity<Anuncio>().Property(x => x.Id);
+
+            // Nome
+            modelBuilder.Entity<Anuncio>().Property(x => x.Nome).HasMaxLength(50);
+            modelBuilder.Entity<Anuncio>().Property(x => x.Nome).HasColumnType("varchar(50)");
+            modelBuilder.Entity<Anuncio>().Property(x => x.Nome).IsRequired();
+
+            // Descrição
+            modelBuilder.Entity<Anuncio>().Property(x => x.Descricao).HasMaxLength(200);
+            modelBuilder.Entity<Anuncio>().Property(x => x.Descricao).HasColumnType("varchar(200)");
+            modelBuilder.Entity<Anuncio>().Property(x => x.Descricao).IsRequired();
+
+            // Imagem
+            modelBuilder.Entity<Anuncio>().Property(x => x.Imagem).HasMaxLength(200);
+            modelBuilder.Entity<Anuncio>().Property(x => x.Imagem).HasColumnType("varchar(200)");
+
+            // Preço
+            modelBuilder.Entity<Anuncio>().Property(x => x.Preco).HasMaxLength(24);
+            modelBuilder.Entity<Anuncio>().Property(x => x.Preco).HasColumnType("float(24)");
+            modelBuilder.Entity<Anuncio>().Property(x => x.Preco).IsRequired();
+
+            // DataCriação
+            modelBuilder.Entity<Anuncio>().Property(x => x.DataCriacao).HasColumnType("DateTime");
+
+            // configurando relacionamento
+            //modelBuilder.Entity<Anuncio>()
 
             #endregion
 

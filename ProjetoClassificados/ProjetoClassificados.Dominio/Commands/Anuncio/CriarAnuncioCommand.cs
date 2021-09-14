@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoClassificados.Dominio.Commands.Anuncio
 {
-    class CriarAnuncioCommand : Notifiable<Notification>, ICommand
+    public class CriarAnuncioCommand : Notifiable<Notification>, ICommand
     {
 
         public CriarAnuncioCommand()
@@ -38,6 +38,7 @@ namespace ProjetoClassificados.Dominio.Commands.Anuncio
                 .Requires()
                 .IsNotEmpty(Nome, "Nome", "Nome não pode ser vazio")
                 .IsNotEmpty(Descricao, "Descrição", "Descrição não pode ser vazia")
+                .IsNotNull(Preco, "Preço", "O Preço não pode ser vazio")
             );
         }
 

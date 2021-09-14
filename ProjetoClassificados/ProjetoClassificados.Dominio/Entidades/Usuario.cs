@@ -48,6 +48,9 @@ namespace ProjetoClassificados.Dominio.Entidades
         public string Estado { get; private set; }
         public EnTipoUsuario TipoUsuario { get; private set; }
 
+        // Composições 
+        public IReadOnlyCollection<Anuncio> Anuncios { get; set; }
+
         public void AtualizaUsuario(string email, string nome, long telefone, string image, string cidade, string estado)
         {
             AddNotifications(
