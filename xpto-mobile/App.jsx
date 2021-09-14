@@ -9,6 +9,7 @@ import {
 } from '@expo-google-fonts/poppins';
 
 import { Login } from './src/screens/Login';
+import { Home } from './src/screens/Home';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -22,5 +23,5 @@ export default function App() {
     return <AppLoading />;
   }
 
-  return <Login />;
+  return <Home />;
 }
