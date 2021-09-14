@@ -33,7 +33,11 @@ export function Home() {
 
       <Text style={styles.title}>Anúncios recentes</Text>
 
-      <ScrollView style={styles.recentAds} horizontal={true}>
+      <ScrollView
+        style={styles.recentAds}
+        horizontal={true}
+        showsHorizontalScrollIndicator={false}
+      >
         <AdCard
           urlImage="https://github.com/vinixiii.png"
           title="PS4 Slim - 1Tb"

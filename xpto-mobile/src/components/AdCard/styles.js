@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     backgroundColor: theme.colors.tertiary,
     borderRadius: 12,
     marginTop: 24,
-    marginRight: 12,
+    marginHorizontal: 4,
   },
   imageContainer: {
     width: '100%',
