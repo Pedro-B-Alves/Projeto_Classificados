@@ -5,7 +5,11 @@ import { styles } from './styles';
 import { Button } from '../../components/Button';
 import Illustration01 from '../../assets/illustration-01.png';
 
-export function Login() {
+export function Login({ navigation }) {
+  function handleSignIn() {
+    navigation.navigate('AuthRoutes');
+  }
+
   return (
     <View style={styles.container}>
       <Image style={styles.image} source={Illustration01} />
@@ -17,7 +21,7 @@ export function Login() {
           do Brasil!
         </Text>
 
-        <Button title="Entrar" ghost />
+        <Button title="Entrar" ghost onPress={handleSignIn} />
         <Button title="Quero anunciar!" />
       </View>
     </View>

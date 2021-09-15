@@ -11,6 +11,7 @@ import {
 import { Login } from './src/screens/Login';
 import { Home } from './src/screens/Home';
 import { AdsScreen } from './src/screens/AdsScreen';
+import { Routes } from './src/routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -24,5 +25,5 @@ export default function App() {
     return <AppLoading />;
   }
 
-  return <AdsScreen />;
+  return <Routes />;
 }

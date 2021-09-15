@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
     width: '100%',
     flexDirection: 'row',
     alignItems: 'center',
-    marginTop: getStatusBarHeight() + 24,
+    marginTop: getStatusBarHeight() + 32,
   },
   user: {
     flexDirection: 'row',
