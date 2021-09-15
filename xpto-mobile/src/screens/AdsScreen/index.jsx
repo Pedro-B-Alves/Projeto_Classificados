@@ -5,7 +5,11 @@ import { styles } from './styles';
 import { AdCard } from '../../components/AdCard';
 import SearchIcon from '../../assets/search.png';
 
-export function AdsScreen() {
+export function AdsScreen({ navigation }) {
+  function handleShowAd() {
+    navigation.navigate('AdScreen');
+  }
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Todos os anúncios</Text>
@@ -21,6 +25,7 @@ export function AdsScreen() {
             location="São Paulo | SP"
             interestsNumber="10"
             price="2000"
+            onPress={handleShowAd}
           />
           <AdCard
             urlImage="https://github.com/vinixiii.png"

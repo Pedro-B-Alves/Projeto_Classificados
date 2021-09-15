@@ -4,8 +4,9 @@ import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import { theme } from '../../src/global/styles/theme';
 import { HomeScreen } from '../screens/HomeScreen';
-import { AdsScreen } from '../screens/AdsScreen';
-import { AccountScreen } from '../screens/AccountScreen';
+import { AdsScreenRoutes, AccountScreenRoutes } from './ad.routes';
+// import { AdsScreen } from '../screens/AdsScreen';
+// import { AccountScreen } from '../screens/AccountScreen';
 
 const { Navigator, Screen } = createMaterialBottomTabNavigator();
 
@@ -30,7 +31,7 @@ export function AuthRoutes() {
               />
             );
           }
-          if (route.name === 'AdsScreen') {
+          if (route.name === 'AdsScreenRoutes') {
             return (
               <MaterialCommunityIcons
                 name="storefront-outline"
@@ -39,7 +40,7 @@ export function AuthRoutes() {
               />
             );
           }
-          if (route.name === 'AccountScreen') {
+          if (route.name === 'AccountScreenRoutes') {
             return (
               <MaterialCommunityIcons
                 name="account-outline"
@@ -59,15 +60,15 @@ export function AuthRoutes() {
         }}
       />
       <Screen
-        name="AdsScreen"
-        component={AdsScreen}
+        name="AdsScreenRoutes"
+        component={AdsScreenRoutes}
         options={{
           tabBarLabel: 'Anúncios',
         }}
       />
       <Screen
-        name="AccountScreen"
-        component={AccountScreen}
+        name="AccountScreenRoutes"
+        component={AccountScreenRoutes}
         options={{
           tabBarLabel: 'Conta',
         }}
