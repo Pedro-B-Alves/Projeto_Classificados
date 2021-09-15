@@ -15,24 +15,11 @@ export const styles = StyleSheet.create({
     fontSize: 24,
     color: theme.colors.darkText,
   },
-  inputContainer: {
-    width: '100%',
-    height: 40,
+  buttons: {
+    // height: '100%',
     flexDirection: 'row',
-    alignItems: 'center',
-    borderRadius: 12,
     marginTop: 24,
-    backgroundColor: theme.colors.tertiary,
     marginBottom: 12,
-  },
-  image: {
-    width: 20,
-    height: 20,
-    marginRight: 12,
-    marginLeft: 12,
-  },
-  input: {
-    fontSize: 16,
   },
   ads: {
     flexDirection: 'row',

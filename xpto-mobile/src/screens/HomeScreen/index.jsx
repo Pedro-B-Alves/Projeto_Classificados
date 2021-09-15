@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { View, Text, ScrollView, Image } from 'react-native';
 
 import { styles } from './styles';
@@ -35,7 +35,7 @@ export function HomeScreen() {
 
       <ScrollView
         style={styles.recentAds}
-        horizontal={true}
+        horizontal
         showsHorizontalScrollIndicator={false}
       >
         <AdCard

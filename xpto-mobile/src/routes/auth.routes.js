@@ -1,10 +1,11 @@
 import React from 'react';
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
-import { MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
+import { theme } from '../../src/global/styles/theme';
 import { HomeScreen } from '../screens/HomeScreen';
 import { AdsScreen } from '../screens/AdsScreen';
-import { theme } from '../../src/global/styles/theme';
+import { AccountScreen } from '../screens/AccountScreen';
 
 const { Navigator, Screen } = createMaterialBottomTabNavigator();
 
@@ -31,9 +32,17 @@ export function AuthRoutes() {
           }
           if (route.name === 'AdsScreen') {
             return (
-              <MaterialIcons
-                containerStyle={{ padding: 6 }}
-                name="storefront"
+              <MaterialCommunityIcons
+                name="storefront-outline"
+                size={24}
+                color={color}
+              />
+            );
+          }
+          if (route.name === 'AccountScreen') {
+            return (
+              <MaterialCommunityIcons
+                name="account-outline"
                 size={24}
                 color={color}
               />
@@ -48,14 +57,21 @@ export function AuthRoutes() {
         options={{
           tabBarLabel: 'Início',
         }}
-      ></Screen>
+      />
       <Screen
         name="AdsScreen"
         component={AdsScreen}
         options={{
           tabBarLabel: 'Anúncios',
         }}
-      ></Screen>
+      />
+      <Screen
+        name="AccountScreen"
+        component={AccountScreen}
+        options={{
+          tabBarLabel: 'Conta',
+        }}
+      />
     </Navigator>
   );
 }
