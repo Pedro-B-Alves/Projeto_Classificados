@@ -7,7 +7,7 @@ import { AdCard } from '../../components/AdCard';
 
 import Illustration02 from '../../assets/illustration-02.png';
 
-export function Home() {
+export function HomeScreen() {
   return (
     <View style={styles.container}>
       <View style={styles.header}>

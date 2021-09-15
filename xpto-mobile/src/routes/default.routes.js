@@ -1,8 +1,7 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { Login } from '../screens/Login';
-import { Home } from '../screens/Home';
+import { LoginScreen } from '../screens/LoginScreen';
 import { AuthRoutes } from './auth.routes';
 
 const { Navigator, Screen } = createStackNavigator();
@@ -19,7 +18,7 @@ export function DefaultRoutes() {
         },
       }}
     >
-      <Screen name="Login" component={Login}></Screen>
+      <Screen name="LoginScreen" component={LoginScreen}></Screen>
       <Screen name="AuthRoutes" component={AuthRoutes}></Screen>
     </Navigator>
   );

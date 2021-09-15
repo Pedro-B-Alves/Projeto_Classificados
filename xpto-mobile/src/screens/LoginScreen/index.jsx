@@ -5,7 +5,7 @@ import { styles } from './styles';
 import { Button } from '../../components/Button';
 import Illustration01 from '../../assets/illustration-01.png';
 
-export function Login({ navigation }) {
+export function LoginScreen({ navigation }) {
   function handleSignIn() {
     navigation.navigate('AuthRoutes');
   }

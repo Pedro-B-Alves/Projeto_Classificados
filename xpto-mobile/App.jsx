@@ -8,8 +8,8 @@ import {
   Poppins_700Bold,
 } from '@expo-google-fonts/poppins';
 
-import { Login } from './src/screens/Login';
-import { Home } from './src/screens/Home';
+import { LoginScreen } from './src/screens/LoginScreen';
+import { HomeScreen } from './src/screens/HomeScreen';
 import { AdsScreen } from './src/screens/AdsScreen';
 import { Routes } from './src/routes';
 
