@@ -92,6 +92,9 @@ namespace ProjetoClassificados.Infra.Data.Contexts
 
             // configurando relacionamento
             //modelBuilder.Entity<Anuncio>()
+                //.HasMany(a => a.Anuncio)
+                //.WithOne(u => u.Usuario)
+                //.HasForeignKey ?
 
             #endregion
 

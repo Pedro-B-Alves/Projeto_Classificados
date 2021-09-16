@@ -45,7 +45,7 @@ namespace ProjetoClassificados.Dominio.Handlers.Anuncios
 
 
             //Podemos salvar no banco - repositorio.Adicionar(anuncio)
-            //return new GenericCommandResult(true, "Anuncio criado", "Token");
+            return new GenericCommandResult(true, "Anuncio criado", "Token");
         }
 
     }

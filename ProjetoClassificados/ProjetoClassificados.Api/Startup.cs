@@ -10,7 +10,10 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using ProjetoClassificados.Dominio.Handlers.Anuncios;
+using ProjetoClassificados.Dominio.Repositorios;
 using ProjetoClassificados.Infra.Data.Contexts;
+using ProjetoClassificados.Infra.Data.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -62,6 +65,14 @@ namespace ProjetoClassificados.Api
                                         .AllowAnyMethod()
                                         .AllowAnyHeader());
             });
+
+            #region Injeção de Dependência Anuncio
+            services.AddTransient<IAnuncioRepositorio, AnuncioRepositorio>();
+            services.AddTransient<CriarAnuncioHandler, CriarAnuncioHandler>();
+
+
+            #endregion
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -12,7 +12,7 @@ namespace ProjetoClassificados.Dominio.Entidades
     public class Anuncio : Entidade
     {
 
-        public Anuncio(string nome, string descricao, string imagem, float preco, Guid idUsuario)
+        public Anuncio(string nome, string descricao, string imagem, float preco /*Guid idUsuario*/)
         {
             AddNotifications(
             new Contract<Notification>()
@@ -20,7 +20,7 @@ namespace ProjetoClassificados.Dominio.Entidades
                 .IsNotEmpty(nome, "Nome", "Nome não pode ser vazio")
                 .IsNotEmpty(descricao, "Descricao", "Descricao não pode ser vazia")
                 .IsNotNull(preco, "Preco", "Preço não pode ser vazio")
-                .IsNotNull(idUsuario, "IdUsuario", "Id do Usuario não pode ser vazio")
+                //.IsNotNull(idUsuario, "IdUsuario", "Id do Usuario não pode ser vazio")
             );
 
             if (IsValid)
@@ -29,7 +29,7 @@ namespace ProjetoClassificados.Dominio.Entidades
                 Descricao = descricao;
                 Imagem = imagem;
                 Preco = preco;
-                IdUsuario = idUsuario;
+                //IdUsuario = idUsuario;
             }
 
         }
@@ -40,11 +40,11 @@ namespace ProjetoClassificados.Dominio.Entidades
         public float Preco { get; private set; }
 
         // Composições
-        public Guid IdUsuario { get; private set; }
-        public virtual Usuario Usuario { get; private set; }
+        // public Guid IdUsuario { get; private set; }
+        // public virtual Usuario Usuario { get; private set; }
 
 
-        public void AtualizaAnuncio(string nome, string descricao, string imagem, float preco, Guid idUsuario)
+        public void AtualizaAnuncio(string nome, string descricao, string imagem, float preco /*Guid idUsuario*/)
         {
             AddNotifications(
             new Contract<Notification>()
@@ -53,7 +53,7 @@ namespace ProjetoClassificados.Dominio.Entidades
                 .IsNotEmpty(descricao, "Descrição", "Descrição não pode ser vazia")
                 .IsNotEmpty(imagem, "Imagem", "Imagem não pode ser vazia")
                 .IsNotNull(preco, "Preço", "O preço não pode ser vazio")
-                .IsNotNull(idUsuario, "IdUsuario", "IdUsuario não pode ser vazio")
+                //.IsNotNull(idUsuario, "IdUsuario", "IdUsuario não pode ser vazio")
             );
 
             if (IsValid)
@@ -62,7 +62,7 @@ namespace ProjetoClassificados.Dominio.Entidades
                 Descricao = descricao;
                 Imagem = imagem;
                 Preco = preco;
-                IdUsuario = idUsuario;
+                //IdUsuario = idUsuario;
             }
 
         }
