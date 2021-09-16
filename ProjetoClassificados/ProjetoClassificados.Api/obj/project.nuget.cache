@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WRXRe9QyVBr5POWQ+sDJ09Nk0ZSKcdyS7CXP2T4WKumXmcrCOHnXynEHazvy4Q//B/W6rQ0nWSW36l36Aoc/mw==",
+  "dgSpecHash": "GrWqaTukHcRkoxwiszDrBTzx8THPFaoh1G9Cn/o7j01DRKung9sW35tpay8tVW8BLzcgfmotcOUI+NAKpT1mKw==",
   "success": true,
   "projectFilePath": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Api\\ProjetoClassificados.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\pedro\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.9\\microsoft.aspnetcore.authentication.jwtbearer.5.0.9.nupkg.sha512",

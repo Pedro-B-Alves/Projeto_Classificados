@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoClassificados.Comum.Handlers.Contracts
 {
-    public interface IHandler<T> where T : ICommand
+    public interface IHandlerCommand<T> where T : ICommand
     {
         ICommandResult Handler(T command);
     }

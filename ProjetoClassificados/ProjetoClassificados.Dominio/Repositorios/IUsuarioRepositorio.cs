@@ -14,5 +14,6 @@ namespace ProjetoClassificados.Dominio.Repositorios
         Usuario BuscarPorEmail(string email);
         Usuario BuscarPorId(Guid id);
         ICollection<Usuario> Listar(bool? ativo = null);
+        void Excluir(Guid id);
     }
 }

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "kpZczmrS9v9wDGpODUITh7CvWWLobiIvYQFAfcm1vbBZBj9p+/eENWNUQ5fA4n5QaayHKRw9x7FPC68D3bZnfQ==",
+  "dgSpecHash": "fch89rO+9Klp0o7rdANnloi7HmE/zQIila8mJdGcQqjWf9if+bapv/ob8bfFNvBXu7ATglNJdZkTQ2Vs67L65w==",
   "success": true,
   "projectFilePath": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Dominio\\ProjetoClassificados.Dominio.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\pedro\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
   ],
   "logs": []

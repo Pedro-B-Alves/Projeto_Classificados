@@ -39,6 +39,11 @@ namespace ProjetoClassificados.Testes.Repositorios
             return new Usuario("pedro@gmail.com", "pedro1234", "Pedro", 11912345678, "", "São Paulo", "São Paulo", EnTipoUsuario.Admin);
         }
 
+        public void Excluir(Guid id)
+        {
+            
+        }
+
         public ICollection<Usuario> Listar(bool? ativo = null)
         {
             return new List<Usuario>()

@@ -104,3 +104,4 @@ A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\Pro
 A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Testes\obj\Debug\net5.0\ref\ProjetoClassificados.Testes.dll
 A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Testes\obj\Debug\net5.0\ProjetoClassificados.Testes.pdb
 A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Testes\obj\Debug\net5.0\ProjetoClassificados.Testes.genruntimeconfig.cache
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Testes\bin\Debug\net5.0\BCrypt.Net-Core.dll

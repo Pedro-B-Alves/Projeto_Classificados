@@ -28,12 +28,13 @@ namespace ProjetoClassificados.Infra.Data.Contexts
 
             modelBuilder.Entity<Usuario>().Property(x => x.Id);
 
-            modelBuilder.Entity<Usuario>().Property(x => x.Email).HasMaxLength(40);
-            modelBuilder.Entity<Usuario>().Property(x => x.Email).HasColumnType("varchar(40)");
+            modelBuilder.Entity<Usuario>().Property(x => x.Email).HasMaxLength(60);
+            modelBuilder.Entity<Usuario>().Property(x => x.Email).HasColumnType("varchar(60)");
             modelBuilder.Entity<Usuario>().Property(x => x.Email).IsRequired();
+            modelBuilder.Entity<Usuario>().HasIndex(x => x.Email).IsUnique();
 
-            modelBuilder.Entity<Usuario>().Property(x => x.Senha).HasMaxLength(30);
-            modelBuilder.Entity<Usuario>().Property(x => x.Senha).HasColumnType("varchar(30)");
+            modelBuilder.Entity<Usuario>().Property(x => x.Senha).HasMaxLength(60);
+            modelBuilder.Entity<Usuario>().Property(x => x.Senha).HasColumnType("varchar(60)");
             modelBuilder.Entity<Usuario>().Property(x => x.Senha).IsRequired();
 
             modelBuilder.Entity<Usuario>().Property(x => x.Nome).HasMaxLength(40);

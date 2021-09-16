@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "l46oM43TIumxcRbrMJXzUArosiq/fUGTCuDGHO7RQ98RRIgbe10pReERE0of0eDsOAFztHKPk4UsihgUNU355w==",
+  "dgSpecHash": "YUJCRrAEQyVwDiQg+vBJHhvB/aNiHWqtoKDLyZMTvC31Zs+xGX+FtXNGJa9FUaqG1LjlXeGcjXkKKB9APNe3Zw==",
   "success": true,
   "projectFilePath": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Testes\\ProjetoClassificados.Testes.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\pedro\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\microsoft.codecoverage\\16.9.4\\microsoft.codecoverage.16.9.4.nupkg.sha512",
