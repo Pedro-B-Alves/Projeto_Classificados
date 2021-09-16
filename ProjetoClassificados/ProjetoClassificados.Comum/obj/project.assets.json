@@ -72,11 +72,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Comum\\ProjetoClassificados.Comum.csproj",
+      "projectUniqueName": "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Comum\\ProjetoClassificados.Comum.csproj",
       "projectName": "ProjetoClassificados.Comum",
-      "projectPath": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Comum\\ProjetoClassificados.Comum.csproj",
+      "projectPath": "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Comum\\ProjetoClassificados.Comum.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Comum\\obj\\",
+      "outputPath": "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Comum\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",

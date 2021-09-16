@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YUJCRrAEQyVwDiQg+vBJHhvB/aNiHWqtoKDLyZMTvC31Zs+xGX+FtXNGJa9FUaqG1LjlXeGcjXkKKB9APNe3Zw==",
+  "dgSpecHash": "/Kc/x+Lne7AVGY+aKR3ItEVCjcxE8cxMz97TjsQ/QEj6M2VibMTqlrkLGukJU33Y2gora0YfFfgE8npdDD/OlQ==",
   "success": true,
-  "projectFilePath": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Testes\\ProjetoClassificados.Testes.csproj",
+  "projectFilePath": "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Testes\\ProjetoClassificados.Testes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\coverlet.collector\\3.0.2\\coverlet.collector.3.0.2.nupkg.sha512",

@@ -44,7 +44,7 @@ namespace ProjetoClassificados.Api.Controllers
         }
 
         [Route("delete")]
-        [HttpPost]
+        [HttpDelete]
         public GenericCommandResult Delete(DeletarCommand command, [FromServices] DeletarHandler handle)
         {
             return (GenericCommandResult)handle.Handler(command);

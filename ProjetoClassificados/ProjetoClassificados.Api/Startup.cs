@@ -71,6 +71,7 @@ namespace ProjetoClassificados.Api
             services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
             services.AddTransient<CriarUsuarioHandler, CriarUsuarioHandler>();
             services.AddTransient<LogarHandle, LogarHandle>();
+            services.AddTransient<DeletarHandler, DeletarHandler>();
             #endregion
         }
 

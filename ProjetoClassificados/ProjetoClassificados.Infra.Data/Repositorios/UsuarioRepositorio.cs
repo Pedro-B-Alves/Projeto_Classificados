@@ -43,8 +43,7 @@ namespace ProjetoClassificados.Infra.Data.Repositorios
 
         public void Excluir(Guid id)
         {
-
-            _context.Usuarios.Remove(_context.Usuarios.FirstOrDefault(x => x.Id == id));
+            _context.Usuarios.Remove(BuscarPorId(id));
             _context.SaveChanges();
         }
 

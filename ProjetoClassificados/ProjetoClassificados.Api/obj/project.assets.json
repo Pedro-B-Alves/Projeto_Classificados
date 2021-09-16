@@ -5674,11 +5674,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Api\\ProjetoClassificados.Api.csproj",
+      "projectUniqueName": "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Api\\ProjetoClassificados.Api.csproj",
       "projectName": "ProjetoClassificados.Api",
-      "projectPath": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Api\\ProjetoClassificados.Api.csproj",
+      "projectPath": "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Api\\ProjetoClassificados.Api.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Api\\obj\\",
+      "outputPath": "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5695,8 +5695,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\ProjetoClassificados.Infra.Data.csproj": {
-              "projectPath": "A:\\Repositorios\\Meus Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\ProjetoClassificados.Infra.Data.csproj"
+            "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\ProjetoClassificados.Infra.Data.csproj": {
+              "projectPath": "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\ProjetoClassificados.Infra.Data.csproj"
             }
           }
         }
