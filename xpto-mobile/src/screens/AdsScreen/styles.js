@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
   },
   inputContainer: {
     width: '100%',
-    height: 40,
+    height: 56,
     flexDirection: 'row',
     alignItems: 'center',
     borderRadius: 12,
@@ -32,6 +32,7 @@ export const styles = StyleSheet.create({
     marginLeft: 12,
   },
   input: {
+    width: '100%',
     fontSize: 16,
   },
   ads: {

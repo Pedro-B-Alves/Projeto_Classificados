@@ -8,7 +8,7 @@ import { Button } from '../../components/Button';
 
 export function AdScreen({ route }) {
   const { title, price, location, description, adOwner } = route.params;
-  const role = 'AdOwne';
+  const role = 'Comum';
 
   return (
     <View style={styles.container}>
@@ -43,7 +43,7 @@ export function AdScreen({ route }) {
           <Button title="Demonstrar interesse!" ghost />
         </View>
 
-        {role !== 'AdOwner' ? (
+        {role !== 'Admin' ? (
           // Pessoas interessadas (usuário comum)
           <View>
             <Text style={styles.interestedPeople}>Pessoas interessadas</Text>
@@ -61,6 +61,26 @@ export function AdScreen({ route }) {
               >
                 <Avatar urlImage="https://github.com/vinixiii.png" />
                 <Text>Vinícius Figueiroa</Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  marginTop: 24,
+                }}
+              >
+                <Avatar urlImage="https://github.com/rafael-p.png" />
+                <Text>Rafael Porto</Text>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  marginTop: 24,
+                }}
+              >
+                <Avatar urlImage="https://github.com/renatoalvesdv.png" />
+                <Text>Renato Alves</Text>
               </View>
             </View>
           </View>
@@ -86,6 +106,32 @@ export function AdScreen({ route }) {
                 <Avatar urlImage="https://github.com/vinixiii.png" />
                 <View>
                   <Text>Vinícius Figueiroa</Text>
+                  <Text>Tel: (11) 990909090</Text>
+                </View>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  marginTop: 24,
+                }}
+              >
+                <Avatar urlImage="https://github.com/vinixiii.png" />
+                <View>
+                  <Text>Rafael Porto</Text>
+                  <Text>Tel: (11) 990909090</Text>
+                </View>
+              </View>
+              <View
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  marginTop: 24,
+                }}
+              >
+                <Avatar urlImage="https://github.com/vinixiii.png" />
+                <View>
+                  <Text>Renato Alves</Text>
                   <Text>Tel: (11) 990909090</Text>
                 </View>
               </View>
