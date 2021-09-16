@@ -7,7 +7,14 @@ import SearchIcon from '../../assets/search.png';
 
 export function AdsScreen({ navigation }) {
   function handleShowAd() {
-    navigation.navigate('AdScreen');
+    navigation.navigate('AdScreen', {
+      title: 'PS4 Slim - 1Tb',
+      price: '2000',
+      location: 'São Paulo | SP',
+      description:
+        'É usado mas está em ótimas condições. Nunca apresentou nenhum defeito e é super silencioso',
+      adOwner: 'Pedro Brito',
+    });
   }
 
   return (

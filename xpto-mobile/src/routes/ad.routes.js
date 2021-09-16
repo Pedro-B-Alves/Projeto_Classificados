@@ -27,9 +27,13 @@ export function AdsScreenRoutes() {
       <Screen
         name="AdsScreen"
         component={AdsScreen}
-        options={{ headerShown: false }}
+        options={{ headerShown: false, title: 'Anúncios' }}
       ></Screen>
-      <Screen name="AdScreen" component={AdScreen}></Screen>
+      <Screen
+        name="AdScreen"
+        component={AdScreen}
+        options={{ title: 'Anúncio' }}
+      ></Screen>
     </Navigator>
   );
 }
