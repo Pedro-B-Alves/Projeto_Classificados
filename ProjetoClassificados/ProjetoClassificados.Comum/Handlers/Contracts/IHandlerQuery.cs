@@ -1,4 +1,4 @@
-﻿using ProjetoClassificados.Comum.Commands;
+﻿using ProjetoClassificados.Comum.Queries;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace ProjetoClassificados.Comum.Handlers.Contracts
 {
-    public interface IHandler<T> where T : ICommand
+    public interface IHandlerQuery<T> where T : IQuery
     {
-        ICommandResult Handler(T command);
+        IQueryResult Handler(T query);
     }
 }

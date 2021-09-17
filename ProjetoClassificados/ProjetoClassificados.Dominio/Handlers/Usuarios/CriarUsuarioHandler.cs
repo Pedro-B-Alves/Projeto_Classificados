@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoClassificados.Dominio.Handlers.Usuarios
 {
-    public class CriarUsuarioHandler : Notifiable<Notification>, IHandler<CriarContaCommand>
+    public class CriarUsuarioHandler : Notifiable<Notification>, IHandlerCommand<CriarContaCommand>
     {
         private readonly IUsuarioRepositorio _usuarioRepositorio;
 

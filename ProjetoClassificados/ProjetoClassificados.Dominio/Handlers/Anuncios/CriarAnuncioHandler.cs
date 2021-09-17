@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace ProjetoClassificados.Dominio.Handlers.Anuncios
 {
-    public class CriarAnuncioHandler : Notifiable<Notification>, IHandler<CriarAnuncioCommand>
+    public class CriarAnuncioHandler : Notifiable<Notification>, IHandlerCommand<CriarAnuncioCommand>
     {
 
         private readonly IAnuncioRepositorio _anuncioRepositorio;

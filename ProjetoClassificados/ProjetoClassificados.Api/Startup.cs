@@ -69,8 +69,8 @@ namespace ProjetoClassificados.Api
             #region Injeção de Dependência Anuncio
             services.AddTransient<IAnuncioRepositorio, AnuncioRepositorio>();
             services.AddTransient<CriarAnuncioHandler, CriarAnuncioHandler>();
-
-
+            services.AddTransient<DeletarAnuncioHandler, DeletarAnuncioHandler>();
+            services.AddTransient<ListarAnunciosHandle, ListarAnunciosHandle>();
             #endregion
 
         }
