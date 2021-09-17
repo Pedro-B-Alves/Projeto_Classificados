@@ -7,8 +7,9 @@ import { AdCard } from '../../components/AdCard';
 import SearchIcon from '../../assets/search.png';
 
 export function AdsScreen({ navigation }) {
-  function handleShowAd() {
+  function handleShowAd(id) {
     navigation.navigate('AdScreen', {
+      id: id,
       title: 'PS4 Slim - 1Tb',
       price: '2000',
       location: 'São Paulo | SP',
@@ -20,12 +21,12 @@ export function AdsScreen({ navigation }) {
 
   const renderItem = ({ item }) => (
     <AdCard
-      urlImage="https://github.com/vinixiii.png"
-      title="PS4 Slim - 1Tb"
-      location="São Paulo | SP"
-      interestsNumber="10"
+      urlImage={item.urlImage}
+      title={item.title}
+      location={item.location}
+      interestsNumber={item.interestsNumber}
       price={item.price}
-      onPress={handleShowAd}
+      onPress={() => handleShowAd(item.id)}
     />
   );
 

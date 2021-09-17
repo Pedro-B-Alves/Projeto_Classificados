@@ -7,8 +7,10 @@ import { Avatar } from '../../components/Avatar';
 import { Button } from '../../components/Button';
 
 export function AdScreen({ route }) {
-  const { title, price, location, description, adOwner } = route.params;
+  const { id, title, price, location, description, adOwner } = route.params;
   const role = 'Comum';
+
+  console.log(id);
 
   return (
     <View style={styles.container}>
