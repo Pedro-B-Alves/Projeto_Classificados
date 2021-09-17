@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
-import { View, Text, ScrollView, Image } from 'react-native';
+import { View, Text, ScrollView, Image, FlatList } from 'react-native';
+import { ads } from '../../mock/ads';
 
 import { styles } from './styles';
 import { Avatar } from '../../components/Avatar';
@@ -8,6 +9,16 @@ import { AdCard } from '../../components/AdCard';
 import Illustration02 from '../../assets/illustration-02.png';
 
 export function HomeScreen() {
+  const renderItem = ({ item }) => (
+    <AdCard
+      urlImage={item.urlImage}
+      title={item.title}
+      location={item.location}
+      interestsNumber={item.interestsNumber}
+      price={item.price}
+    />
+  );
+
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -33,40 +44,20 @@ export function HomeScreen() {
 
       <Text style={styles.title}>Anúncios recentes</Text>
 
-      <ScrollView
+      {/* <ScrollView
         style={styles.recentAds}
         horizontal
         showsHorizontalScrollIndicator={false}
-      >
-        <AdCard
-          urlImage="https://github.com/vinixiii.png"
-          title="PS4 Slim - 1Tb"
-          location="São Paulo | SP"
-          interestsNumber="10"
-          price="2000"
-        />
-        <AdCard
-          urlImage="https://github.com/vinixiii.png"
-          title="PS4 Slim - 1Tb"
-          location="São Paulo | SP"
-          interestsNumber="10"
-          price="2000"
-        />
-        <AdCard
-          urlImage="https://github.com/vinixiii.png"
-          title="PS4 Slim - 1Tb"
-          location="São Paulo | SP"
-          interestsNumber="10"
-          price="2000"
-        />
-        <AdCard
-          urlImage="https://github.com/vinixiii.png"
-          title="PS4 Slim - 1Tb"
-          location="São Paulo | SP"
-          interestsNumber="10"
-          price="2000"
-        />
-      </ScrollView>
+      > */}
+      <FlatList
+        style={styles.recentAds}
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        data={ads}
+        keyExtractor={(item) => item.id.toString()}
+        renderItem={renderItem}
+      />
+      {/* </ScrollView> */}
     </View>
   );
 }

@@ -23,7 +23,7 @@ export const styles = StyleSheet.create({
     borderRadius: 12,
     marginTop: 24,
     backgroundColor: theme.colors.tertiary,
-    marginBottom: 12,
+    marginBottom: 24,
   },
   image: {
     width: 20,
@@ -34,11 +34,5 @@ export const styles = StyleSheet.create({
   input: {
     width: '100%',
     fontSize: 16,
-  },
-  ads: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-    justifyContent: 'space-between',
-    marginBottom: 24,
   },
 });

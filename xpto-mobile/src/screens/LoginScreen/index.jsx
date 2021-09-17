@@ -1,21 +1,50 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { View, Text, Image, TextInput } from 'react-native';
 import { Modalize } from 'react-native-modalize';
+import axios from 'axios';
 
 import { styles } from './styles';
 import { Button } from '../../components/Button';
 import Illustration01 from '../../assets/illustration-01.png';
 import Illustration02 from '../../assets/illustration-login.png';
+import { api } from '../../services/api';
 
 export function LoginScreen({ navigation }) {
   const modalizeRef = useRef(null);
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   function handleOpenSignInModal() {
     modalizeRef.current?.open();
   }
 
-  function handleSignIn() {
-    navigation.navigate('AuthRoutes');
+  async function handleSignIn() {
+    try {
+      console.log('Oi');
+
+      // if (email.trim() === '' || password.trim() === '') {
+      //   return;
+      // }
+
+      navigation.navigate('AuthRoutes');
+
+      // const { data } = await axios.post(
+      //   'https://localhost:5001/v1/account/signin',
+      //   {
+      //     email: email,
+      //     senha: password,
+      //   }
+      // );
+
+      // if (data.sucesso === true) {
+      //   const token = data.data.token;
+      //   navigation.navigate('AuthRoutes');
+      // }
+
+      // console.log(data.sucesso);
+    } catch (error) {
+      console.warn(error);
+    }
   }
 
   return (
@@ -47,11 +76,18 @@ export function LoginScreen({ navigation }) {
           <Text style={styles.subtitle}>Faça seu login!</Text>
           <View style={styles.formField}>
             <Text style={styles.label}>E-mail</Text>
-            <TextInput style={styles.input} />
+            <TextInput
+              style={styles.input}
+              onChangeText={(email) => setEmail(email)}
+            />
           </View>
           <View style={[styles.formField, { marginBottom: 24 }]}>
             <Text style={styles.label}>Senha</Text>
-            <TextInput style={styles.input} />
+            <TextInput
+              secureTextEntry={true}
+              style={styles.input}
+              onChangeText={(password) => setPassword(password)}
+            />
           </View>
 
           <Button title="Entrar" ghost onPress={handleSignIn} />
