@@ -34,3 +34,15 @@ C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\Proj
 C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.dll
 C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ref\ProjetoClassificados.Comum.dll
 C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.pdb
+A:\Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\bin\Debug\net5.0\ProjetoClassificados.Comum.deps.json
+A:\Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\bin\Debug\net5.0\ProjetoClassificados.Comum.dll
+A:\Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\bin\Debug\net5.0\ref\ProjetoClassificados.Comum.dll
+A:\Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\bin\Debug\net5.0\ProjetoClassificados.Comum.pdb
+A:\Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.csproj.AssemblyReference.cache
+A:\Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.GeneratedMSBuildEditorConfig.editorconfig
+A:\Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.AssemblyInfoInputs.cache
+A:\Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.AssemblyInfo.cs
+A:\Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.csproj.CoreCompileInputs.cache
+A:\Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.dll
+A:\Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ref\ProjetoClassificados.Comum.dll
+A:\Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Comum\obj\Debug\net5.0\ProjetoClassificados.Comum.pdb

@@ -11,13 +11,12 @@ using System.Threading.Tasks;
 
 namespace ProjetoClassificados.Api.Controllers
 {
-    [Route("v1/[interest]")]
+    [Route("v1/interest")]
     [ApiController]
     public class InteresseController : ControllerBase
     {
-
+        [Route("interesse")]
         [HttpPost]
-        [Authorize]
         public GenericCommandResult Create(AdicionarInteresseCommand command, [FromServices] AdicionarInteresseHandle handle)
         {
             return (GenericCommandResult)handle.Handler(command);

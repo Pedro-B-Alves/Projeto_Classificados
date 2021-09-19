@@ -5636,19 +5636,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\renat\\.nuget\\packages\\": {}
+    "C:\\Users\\pedro\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\renat\\Documents\\Projeto\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Api\\ProjetoClassificados.Api.csproj",
+      "projectUniqueName": "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Api\\ProjetoClassificados.Api.csproj",
       "projectName": "ProjetoClassificados.Api",
-      "projectPath": "C:\\Users\\renat\\Documents\\Projeto\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Api\\ProjetoClassificados.Api.csproj",
-      "packagesPath": "C:\\Users\\renat\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\renat\\Documents\\Projeto\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Api\\obj\\",
+      "projectPath": "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Api\\ProjetoClassificados.Api.csproj",
+      "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
+      "outputPath": "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\renat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5662,8 +5662,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\renat\\Documents\\Projeto\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\ProjetoClassificados.Infra.Data.csproj": {
-              "projectPath": "C:\\Users\\renat\\Documents\\Projeto\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\ProjetoClassificados.Infra.Data.csproj"
+            "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\ProjetoClassificados.Infra.Data.csproj": {
+              "projectPath": "A:\\Repositorios\\Projeto_Classificados\\ProjetoClassificados\\ProjetoClassificados.Infra.Data\\ProjetoClassificados.Infra.Data.csproj"
             }
           }
         }
@@ -5729,7 +5729,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
