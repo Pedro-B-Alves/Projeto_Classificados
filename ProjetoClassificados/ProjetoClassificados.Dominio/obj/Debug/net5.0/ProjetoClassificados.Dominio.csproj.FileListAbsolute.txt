@@ -1,0 +1,45 @@
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Dominio.deps.json
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Dominio.dll
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ref\ProjetoClassificados.Dominio.dll
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Dominio.pdb
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Comum.dll
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Comum.pdb
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.csproj.AssemblyReference.cache
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.AssemblyInfoInputs.cache
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.AssemblyInfo.cs
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.csproj.CoreCompileInputs.cache
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.csproj.CopyComplete
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.dll
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ref\ProjetoClassificados.Dominio.dll
+A:\Repositorios\Meus Repositorios\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.pdb
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Dominio.deps.json
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Dominio.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ref\ProjetoClassificados.Dominio.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Dominio.pdb
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Comum.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Comum.pdb
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.csprojAssemblyReference.cache
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.AssemblyInfoInputs.cache
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.AssemblyInfo.cs
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.csproj.CopyComplete
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ref\ProjetoClassificados.Dominio.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.pdb
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Dominio.deps.json
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Dominio.dll
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ref\ProjetoClassificados.Dominio.dll
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Dominio.pdb
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Comum.dll
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\bin\Debug\net5.0\ProjetoClassificados.Comum.pdb
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.csproj.AssemblyReference.cache
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.AssemblyInfoInputs.cache
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.AssemblyInfo.cs
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.csproj.CopyComplete
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.dll
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ref\ProjetoClassificados.Dominio.dll
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Dominio\obj\Debug\net5.0\ProjetoClassificados.Dominio.pdb

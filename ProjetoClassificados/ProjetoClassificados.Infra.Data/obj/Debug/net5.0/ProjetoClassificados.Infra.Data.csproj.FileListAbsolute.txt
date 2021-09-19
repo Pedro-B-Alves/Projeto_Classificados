@@ -1,0 +1,40 @@
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Infra.Data.deps.json
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Infra.Data.runtimeconfig.json
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Infra.Data.runtimeconfig.dev.json
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Infra.Data.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ref\ProjetoClassificados.Infra.Data.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Infra.Data.pdb
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Comum.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Dominio.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Dominio.pdb
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Comum.pdb
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.csprojAssemblyReference.cache
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.AssemblyInfo.cs
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.csproj.CopyComplete
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ref\ProjetoClassificados.Infra.Data.dll
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.pdb
+C:\Users\R4f4e\OneDrive\Área de Trabalho\Nova pasta\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.genruntimeconfig.cache
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Infra.Data.deps.json
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Infra.Data.runtimeconfig.json
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Infra.Data.runtimeconfig.dev.json
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Infra.Data.dll
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ref\ProjetoClassificados.Infra.Data.dll
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Infra.Data.pdb
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Comum.dll
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Dominio.dll
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Dominio.pdb
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\bin\Debug\net5.0\ProjetoClassificados.Comum.pdb
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.csproj.AssemblyReference.cache
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.AssemblyInfoInputs.cache
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.AssemblyInfo.cs
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.csproj.CoreCompileInputs.cache
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.csproj.CopyComplete
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.dll
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ref\ProjetoClassificados.Infra.Data.dll
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.pdb
+C:\Users\renat\Documents\Projeto\Projeto_Classificados\ProjetoClassificados\ProjetoClassificados.Infra.Data\obj\Debug\net5.0\ProjetoClassificados.Infra.Data.genruntimeconfig.cache
