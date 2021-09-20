@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 using ProjetoClassificados.Comum.Commands;
+using ProjetoClassificados.Comum.Queries;
 using ProjetoClassificados.Dominio.Commands.Autenticacao;
 using ProjetoClassificados.Dominio.Commands.Usuario;
 using ProjetoClassificados.Dominio.Entidades;
@@ -48,6 +49,14 @@ namespace ProjetoClassificados.Api.Controllers
         public GenericCommandResult Delete(DeletarCommand command, [FromServices] DeletarHandler handle)
         {
             return (GenericCommandResult)handle.Handler(command);
+        }
+
+        [Route("takebyid")]
+        [HttpGet]
+        public GenericQueryResult TakeById(Guid id, BuscarPorIdUsuarioQuery query, [FromServices] BuscarPorIdUsuarioHandler handle)
+        {
+            query.Id = id;
+            return (GenericQueryResult)handle.Handler(query);
         }
 
         private string GenerateJSONWebToken(Usuario userInfo)
