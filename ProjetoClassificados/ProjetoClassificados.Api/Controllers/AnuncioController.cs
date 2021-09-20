@@ -40,5 +40,14 @@ namespace ProjetoClassificados.Api.Controllers
             return (GenericQueryResult)handle.Handler(query);
         }
 
+        [Route("takeById")]
+        [HttpGet("{id}")]
+        public GenericQueryResult takeById([FromServices] BuscarPorIdHandle handle)
+        {
+            BuscarPorIdQuery query = new BuscarPorIdQuery();
+
+            return (GenericQueryResult)handle.Handler(query);
+        }
+
     }
 }
