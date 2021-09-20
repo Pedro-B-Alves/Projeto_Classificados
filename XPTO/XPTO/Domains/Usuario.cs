@@ -8,8 +8,13 @@ using System.Threading.Tasks;
 namespace XPTO.Domains
 {
     [Table("Usuario")]
-    public class Usuario : Base
+    public class Usuario
     {
+        [Key]
+        // Define o auto-incremento
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int idUsuario { get; set; }
+
         [Column(TypeName = "VARCHAR(60)")]
         // Define que a propriedade é obrigatória
         [Required(ErrorMessage = "O e-mail do usuário é obrigatório!")]
@@ -22,9 +27,16 @@ namespace XPTO.Domains
         [StringLength(60, MinimumLength = 8, ErrorMessage = "A senha deve conter entre 8 e 60 caracteres.")]
         public string senha { get; set; }
 
+        [Column(TypeName = "VARCHAR(60)")]
+        // Define que a propriedade é obrigatória
+        [Required(ErrorMessage = "O nome do usuário é obrigatório!")]
+        // Define os requisitos da propriedade
+        [StringLength(60, MinimumLength = 3, ErrorMessage = "O nome deve conter entre 3 e 60 caracteres.")]
+        public string nome { get; set; }
+
         [Column(TypeName = "bigint")]
         // Define que a propriedade é obrigatória
-        [Required(ErrorMessage = "O telefone do usuário é obrigatória!")]
+        [Required(ErrorMessage = "O telefone do usuário é obrigatório!")]
         // Define os requisitos da propriedade
         [StringLength(11, MinimumLength = 11, ErrorMessage = "O telefone deve conter 11 caracteres.")]
         public long telefone { get; set; }
@@ -45,5 +57,14 @@ namespace XPTO.Domains
         // Define os requisitos da propriedade
         [StringLength(30, MinimumLength = 2, ErrorMessage = "O estado deve conter entre 2 e 30 caracteres.")]
         public string estado { get; set; }
+
+        [Column(TypeName = "tinyint")]
+        // Define que a propriedade é obrigatória
+        [Required(ErrorMessage = "O tipo do usuário é obrigatório!")]
+        public int idTipoUsuario { get; set; }
+
+        // Define a chave estrangeira
+        [ForeignKey("idTipoUsuario")]
+        public TipoUsuario tipoUsuario { get; set; }
     }
 }

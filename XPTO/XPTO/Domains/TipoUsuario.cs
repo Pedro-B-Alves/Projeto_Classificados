@@ -7,17 +7,18 @@ using System.Threading.Tasks;
 
 namespace XPTO.Domains
 {
-    [Table("Base")]
-    public class Base
+    [Table("TiposUsuario")]
+    public class TipoUsuario
     {
         [Key]
         // Define o auto-incremento
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public Guid id { get; set; }
+        public int idTipoUsuario { get; set; }
 
-        [Column(TypeName = "DateTime")]
+        // Define o tipo de dado
+        [Column(TypeName = "VARCHAR(255)")]
         // Define que a propriedade é obrigatória
-        [Required(ErrorMessage = "Registre a data")]
-        public DateTime DataCriacao { get; set; }
+        [Required(ErrorMessage = "O título do tipo de usuário é obrigatório!")]
+        public string titulo { get; set; }
     }
 }
