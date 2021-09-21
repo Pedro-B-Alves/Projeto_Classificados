@@ -3,7 +3,14 @@ import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
-    width: 140,
+    width: 160,
+    backgroundColor: theme.colors.tertiary,
+    borderRadius: 12,
+    marginTop: 24,
+    marginHorizontal: 4,
+  },
+  verticalListContainer: {
+    width: '48%',
     backgroundColor: theme.colors.tertiary,
     borderRadius: 12,
     marginTop: 24,

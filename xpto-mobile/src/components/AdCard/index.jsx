@@ -10,10 +10,15 @@ export function AdCard({
   location,
   interestsNumber,
   price,
+  inHorizontal,
   ...rest
 }) {
   return (
-    <TouchableOpacity style={styles.container} activeOpacity={0.7} {...rest}>
+    <TouchableOpacity
+      style={inHorizontal ? styles.container : styles.verticalListContainer}
+      activeOpacity={0.7}
+      {...rest}
+    >
       <View style={styles.imageContainer}>
         <Image style={styles.image} source={{ uri: urlImage }} />
       </View>

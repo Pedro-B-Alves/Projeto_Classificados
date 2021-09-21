@@ -20,8 +20,6 @@ export function LoginScreen({ navigation }) {
 
   async function handleSignIn() {
     try {
-      console.log('Oi');
-
       // if (email.trim() === '' || password.trim() === '') {
       //   return;
       // }

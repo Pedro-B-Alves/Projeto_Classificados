@@ -16,6 +16,7 @@ export function HomeScreen() {
       location={item.location}
       interestsNumber={item.interestsNumber}
       price={item.price}
+      inHorizontal
     />
   );
 
@@ -50,9 +51,10 @@ export function HomeScreen() {
         showsHorizontalScrollIndicator={false}
       > */}
       <FlatList
-        style={styles.recentAds}
-        horizontal
-        showsHorizontalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
+        numColumns={2}
+        columnWrapperStyle={{ justifyContent: 'space-between' }}
+        contentContainerStyle={{ paddingBottom: 24 }}
         data={ads}
         keyExtractor={(item) => item.id.toString()}
         renderItem={renderItem}

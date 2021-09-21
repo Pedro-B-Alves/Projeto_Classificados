@@ -7,25 +7,26 @@ import { AdCard } from '../../components/AdCard';
 import SearchIcon from '../../assets/search.png';
 
 export function AdsScreen({ navigation }) {
-  function handleShowAd() {
+  function handleShowAd(item) {
     navigation.navigate('AdScreen', {
-      title: 'PS4 Slim - 1Tb',
-      price: '2000',
-      location: 'São Paulo | SP',
-      description:
-        'É usado mas está em ótimas condições. Nunca apresentou nenhum defeito e é super silencioso',
+      urlImage: item.urlImage,
+      title: item.title,
+      price: item.price,
+      location: item.location,
+      description: item.description,
       adOwner: 'Pedro Brito',
     });
   }
 
   const renderItem = ({ item }) => (
     <AdCard
-      urlImage="https://github.com/vinixiii.png"
-      title="PS4 Slim - 1Tb"
-      location="São Paulo | SP"
-      interestsNumber="10"
+      urlImage={item.urlImage}
+      title={item.title}
+      location={item.location}
+      interestsNumber={item.interestsNumber}
       price={item.price}
-      onPress={handleShowAd}
+      inHorizontal
+      onPress={() => handleShowAd(item)}
     />
   );
 

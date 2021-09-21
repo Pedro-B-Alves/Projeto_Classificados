@@ -7,13 +7,14 @@ import { Avatar } from '../../components/Avatar';
 import { Button } from '../../components/Button';
 
 export function AdScreen({ route }) {
-  const { title, price, location, description, adOwner } = route.params;
+  const { urlImage, title, price, location, description, adOwner } =
+    route.params;
   const role = 'Comum';
 
   return (
     <View style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <Image style={styles.image} source={PS4Img} />
+        <Image style={styles.image} source={{ uri: urlImage }} />
         <Text style={styles.title}>
           {JSON.stringify(title).replace(/['"]+/g, '')}
         </Text>
