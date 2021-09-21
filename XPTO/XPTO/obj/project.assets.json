@@ -7530,11 +7530,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\Repositorios\\Projeto_Classificados\\XPTO\\XPTO\\XPTO.csproj",
+      "projectUniqueName": "A:\\Repositorios\\teste\\Projeto_Classificados\\XPTO\\XPTO\\XPTO.csproj",
       "projectName": "XPTO",
-      "projectPath": "A:\\Repositorios\\Projeto_Classificados\\XPTO\\XPTO\\XPTO.csproj",
+      "projectPath": "A:\\Repositorios\\teste\\Projeto_Classificados\\XPTO\\XPTO\\XPTO.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "A:\\Repositorios\\Projeto_Classificados\\XPTO\\XPTO\\obj\\",
+      "outputPath": "A:\\Repositorios\\teste\\Projeto_Classificados\\XPTO\\XPTO\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",

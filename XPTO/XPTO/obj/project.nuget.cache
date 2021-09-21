@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4SDt5THy/bTCqUe2gN6SbWi79ktnX8rNvO65qyORaIvBQhJBI3a9BeOViE9raCG3bTPE6RMjcWnVz2VGGo2q7Q==",
+  "dgSpecHash": "edtvzsG9Gxdu68NnwdTYfX4ZjJkHtjrIbL84II5cYdh1S5On0LxDGxceg2JbQQwYAVJDFMnoGAYKpXEhSeO5Kw==",
   "success": true,
-  "projectFilePath": "A:\\Repositorios\\Projeto_Classificados\\XPTO\\XPTO\\XPTO.csproj",
+  "projectFilePath": "A:\\Repositorios\\teste\\Projeto_Classificados\\XPTO\\XPTO\\XPTO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\5.0.10\\microsoft.aspnetcore.authentication.jwtbearer.5.0.10.nupkg.sha512",
