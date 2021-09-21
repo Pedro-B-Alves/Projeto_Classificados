@@ -77,6 +77,7 @@ namespace XPTO.Contexts
                     idUsuario = 2,
                     idAnuncio = 1
                 });
+
             base.OnModelCreating(modelBuilder);
         }
     }

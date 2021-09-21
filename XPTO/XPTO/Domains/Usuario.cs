@@ -61,10 +61,9 @@ namespace XPTO.Domains
         [Column(TypeName = "tinyint")]
         // Define que a propriedade é obrigatória
         [Required(ErrorMessage = "O tipo do usuário é obrigatório!")]
+        [ForeignKey("idTipoUsuario")]
         public int idTipoUsuario { get; set; }
 
         // Define a chave estrangeira
-        [ForeignKey("idTipoUsuario")]
-        public TipoUsuario tipoUsuario { get; set; }
     }
 }

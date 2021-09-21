@@ -43,7 +43,7 @@ namespace XPTO
             });
 
             services.AddSwaggerGen(c => {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Gufi.webApi", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "XPTO", Version = "v1" });
 
                 // Set the comments path for the Swagger JSON and UI.
                 var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -91,7 +91,7 @@ namespace XPTO
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "XPTO.webApi");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "XPTO");
                 c.RoutePrefix = string.Empty;
             });
 
