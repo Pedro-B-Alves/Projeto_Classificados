@@ -6,7 +6,7 @@ using XPTO.Domains;
 
 namespace XPTO.Interfaces
 {
-    interface InteresseRepository
+    interface IInteresseRepository
     {
         void Cadastrar(Interesse novoInteresse);
 

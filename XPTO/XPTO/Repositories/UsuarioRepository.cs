@@ -62,5 +62,11 @@ namespace XPTO.Repositories
             // Salva as alterações no banco de dados
             ctx.SaveChanges();
         }
+
+        public Usuario Login(string email, string senha)
+        {
+            // Retorna o usuário encontrado através do e-mail e da senha
+            return ctx.Usuario.FirstOrDefault(u => u.email == email && u.senha == senha);
+        }
     }
 }
