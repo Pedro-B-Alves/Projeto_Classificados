@@ -1,0 +1,871 @@
+{
+	"info": {
+		"_postman_id": "a6fda46a-7fea-441c-8f1b-c83b17de393d",
+		"name": "XPTO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Anuncio",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "/api/Anuncio/:id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Anuncio/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Anuncio",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "86464525",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Anuncio/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Anuncio",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/Anuncio/:id",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"descricao\": \"in Ut cillum\",\n    \"idUsuario\": -27843629,\n    \"nome\": \"mollit laborum velit\",\n    \"preco\": -78923346.101293,\n    \"idAnuncio\": 60763628,\n    \"imagem\": \"in occaecat\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Anuncio/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Anuncio",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "86464525",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"descricao\": \"in Ut cillum\",\n    \"idUsuario\": -27843629,\n    \"nome\": \"mollit laborum velit\",\n    \"preco\": -78923346.101293,\n    \"idAnuncio\": 60763628,\n    \"imagem\": \"in occaecat\"\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Anuncio/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Anuncio",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/Anuncio/:id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Anuncio/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Anuncio",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "86464525",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Anuncio/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Anuncio",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Anuncio",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/Anuncio",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Anuncio"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Anuncio",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Anuncio"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/Anuncio",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"descricao\": \"in Ut cillum\",\n    \"idUsuario\": -27843629,\n    \"nome\": \"mollit laborum velit\",\n    \"preco\": -78923346.101293,\n    \"idAnuncio\": 60763628,\n    \"imagem\": \"in occaecat\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Anuncio",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Anuncio"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"descricao\": \"in Ut cillum\",\n    \"idUsuario\": -27843629,\n    \"nome\": \"mollit laborum velit\",\n    \"preco\": -78923346.101293,\n    \"idAnuncio\": 60763628,\n    \"imagem\": \"in occaecat\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Anuncio",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Anuncio"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Interesse",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "/api/Interesse/:id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Interesse/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Interesse",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "86464525",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Interesse/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Interesse",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/Interesse/:id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Interesse/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Interesse",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "86464525",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Interesse/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Interesse",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Interesse",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"idAnuncio\": 61621542,\n    \"idUsuario\": 3423729,\n    \"idInteresse\": 69858712\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Interesse",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Interesse"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"idAnuncio\": 61621542,\n    \"idUsuario\": 3423729,\n    \"idInteresse\": 69858712\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Interesse",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Interesse"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Usuario",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "/api/Usuario/:id",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"cidade\": \"incididunt sit\",\n    \"email\": \"ipsum\",\n    \"estado\": \"sed velit mo\",\n    \"idTipoUsuario\": 97092668,\n    \"nome\": \"est\",\n    \"senha\": \"do Ut dolore dolor ad\",\n    \"telefone\": 98127581,\n    \"idUsuario\": -35644667,\n    \"imagem\": \"dolore Ut commodo esse\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Usuario/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Usuario",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "86464525",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n    \"cidade\": \"incididunt sit\",\n    \"email\": \"ipsum\",\n    \"estado\": \"sed velit mo\",\n    \"idTipoUsuario\": 97092668,\n    \"nome\": \"est\",\n    \"senha\": \"do Ut dolore dolor ad\",\n    \"telefone\": 98127581,\n    \"idUsuario\": -35644667,\n    \"imagem\": \"dolore Ut commodo esse\"\n}"
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/Usuario/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Usuario",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/Usuario/:id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Usuario/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Usuario",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "86464525",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Usuario/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Usuario",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/Usuario/:id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Usuario/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Usuario",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "86464525",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Usuario/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Usuario",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/Usuario",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"cidade\": \"incididunt sit\",\n    \"email\": \"ipsum\",\n    \"estado\": \"sed velit mo\",\n    \"idTipoUsuario\": 97092668,\n    \"nome\": \"est\",\n    \"senha\": \"do Ut dolore dolor ad\",\n    \"telefone\": 98127581,\n    \"idUsuario\": -35644667,\n    \"imagem\": \"dolore Ut commodo esse\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Usuario",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Usuario"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n    \"cidade\": \"incididunt sit\",\n    \"email\": \"ipsum\",\n    \"estado\": \"sed velit mo\",\n    \"idTipoUsuario\": 97092668,\n    \"nome\": \"est\",\n    \"senha\": \"do Ut dolore dolor ad\",\n    \"telefone\": 98127581,\n    \"idUsuario\": -35644667,\n    \"imagem\": \"dolore Ut commodo esse\"\n}"
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/Usuario",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Usuario"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "/api/Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"do\",\n    \"senha\": \"ullamco minim aliqua\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/Login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"Login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"do\",\n    \"senha\": \"ullamco minim aliqua\"\n}"
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/Login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"Login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "text/plain"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:5000"
+		}
+	]
+}
