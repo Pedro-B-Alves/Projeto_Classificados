@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -37,6 +38,7 @@ namespace XPTO.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult Post(Anuncio novoAnuncio)
         {
             // Faz a chamada para o método
@@ -47,6 +49,7 @@ namespace XPTO.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize]
         public IActionResult Put(int id, Anuncio anuncioAtualizado)
         {
             // Faz a chamada para o método
@@ -57,6 +60,7 @@ namespace XPTO.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize]
         public IActionResult Delete(int id)
         {
             // Faz a chamada para o método

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -33,6 +34,7 @@ namespace XPTO.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize]
         public IActionResult Put(int id, Usuario usuarioAtualizado)
         {
             // Faz a chamada para o método
@@ -43,6 +45,7 @@ namespace XPTO.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize]
         public IActionResult Delete(int id)
         {
             // Faz a chamada para o método
@@ -53,6 +56,7 @@ namespace XPTO.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize]
         public IActionResult GetById(int id)
         {
             // Retorna a resposta da requisição fazendo a chamada para o método
