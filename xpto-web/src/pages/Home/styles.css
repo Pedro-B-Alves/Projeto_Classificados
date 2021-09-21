@@ -1,0 +1,60 @@
+.banner {
+  background-color: #ffb326;
+  margin-bottom: 48px;
+  height: 600px;
+}
+.contentArea {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 1200px;
+}
+.divText {
+  width: 600px;
+}
+.divText h2 {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+.divText p {
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  color: #2f2e41;
+}
+.contentBlock {
+  display: flex;
+  justify-content: center;
+  align-content: space-between 30px;
+  margin-bottom: 48px;
+  gap: 80px;
+}
+.contentBlockRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1200px;
+}
+.contentBlockRow h2 {
+  padding-bottom: 20px;
+  font-size: 36px;
+}
+.cardsArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section {
+  display: flex;
+  justify-content: center;
+}
+.bottomAdCards a {
+  font-size: 24px;
+  color: #ffb326;
+  font-weight: bold;
+}
+.bottomAdCards {
+  display: flex;
+  justify-content: end;
+  margin: 48px 0;
+}
