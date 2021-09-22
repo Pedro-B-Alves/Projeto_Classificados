@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './styles.css';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import LoginImg from '../../img/LoginImg.png';
 import { Button } from '../../components/Button';
 import axios from 'axios';
@@ -38,7 +38,7 @@ export function Login() {
           <h2 style={{ marginBottom: '192px' }}>
             Bem-vindo ao melhor site &amp; app de anúncios do Brasil!
           </h2>
-          <img src={LoginImg} />
+          <img src={LoginImg} alt="imagem de login" />
         </div>
       </div>
       <div className="rightContentArea">
@@ -66,7 +66,7 @@ export function Login() {
           <div className="bottomInputLogin">
             <div className="informations">
               <p>Ainda nao possui uma conta?</p>
-              <a href="#">Cadastre-se ja!</a>
+              <Link to="/">Cadastre-se ja!</Link>
             </div>
             <Button type="submit">Enviar</Button>
           </div>

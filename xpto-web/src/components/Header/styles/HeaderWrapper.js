@@ -15,14 +15,14 @@ export const HeaderWrapper = styled.header`
     font-family: 'Poppins';
     text-decoration: none;
     color: #ffffff;
-    padding: 0px 17px;
+    /* padding: 0px 17px; */
   }
   a:hover {
     color: #ffb326;
   }
   .divLogo {
     display: flex;
-    justify-content: center;
+    align-items: center;
     border-color: red;
   }
   .contentAreaHeader {
@@ -33,5 +33,11 @@ export const HeaderWrapper = styled.header`
   .firstBlock {
     display: flex;
     justify-content: space-between;
+  }
+  .header-avatar {
+    span {
+      font-weight: 600;
+      color: #fff;
+    }
   }
 `;

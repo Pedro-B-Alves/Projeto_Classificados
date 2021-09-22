@@ -15,10 +15,10 @@ import {
 export const routing = (
   <Router>
     <Switch>
+      <Route exact path="/" component={Home} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/products" component={Products} />
-      <Route exact path="*" component={Home} />
-      <Route exact path="/adpage" component={AdPage} />
+      <Route exact path="/ad" component={AdPage} />
     </Switch>
   </Router>
 );

@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background-color: #e6e6e6;
 }
 .leftContentArea {
   display: flex;
@@ -12,7 +13,7 @@
   width: 50%;
   height: 100%;
   color: #ffffff;
-  border-radius: 12px;
+  border-radius: 0 12px 12px 0;
 }
 .rightContentArea {
   display: flex;
@@ -91,4 +92,3 @@
   width: 448px;
   margin-bottom: 48px;
 }
-

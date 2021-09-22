@@ -7,8 +7,7 @@ export const AdCardWrapper = styled.div`
   background-color: #ffffff;
   width: 360px;
   border-radius: 12px;
-  margin: 0 20px;
-  margin-bottom: 10px;
+  color: #333;
 
   .footerCard {
     display: flex;
@@ -37,6 +36,9 @@ export const AdCardWrapper = styled.div`
   .contentTextInfo p,
   .contentTextInfo h2 {
     padding: 0 24px;
+  }
+  .contentTextInfo h2 {
+    font-size: 24px;
   }
   .contentTextInfo p {
     font-size: 16px;

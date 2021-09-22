@@ -25,6 +25,8 @@ export const ButtonWrapper = styled.button`
   border-radius: 12px;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+
   ${({ ghost, border, banner }) => {
     if (ghost) return GhostButton;
     if (border) return BorderButton;

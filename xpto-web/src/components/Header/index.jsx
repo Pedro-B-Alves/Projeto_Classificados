@@ -1,10 +1,12 @@
 import React from 'react';
 import { Button } from '../Button';
 import { HeaderWrapper } from './styles/HeaderWrapper';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
+import { Avatar } from '../Avatar';
 
 export function Header() {
   const history = useHistory();
+  const userLoggedIn = true;
 
   function redirect(e) {
     e.preventDefault();
@@ -18,14 +20,34 @@ export function Header() {
           <div className="divLogo">
             <h1>XTPO</h1>
           </div>
-          <div>
-            <a href="#">Inicio</a>
-            <a href="#">Produtos</a>
-            <a href="#">Anunciar</a>
-            <Button onClick={redirect} ghost>
-              Entrar
-            </Button>
-            <Button>Quero anunciar</Button>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+            {userLoggedIn ? (
+              <>
+                {/* <Link to="/">Inicio</Link> */}
+                <Link to="/products">Produtos</Link>
+                <Link to="/">Anunciar</Link>
+                <div
+                  className="header-avatar"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '24px',
+                  }}
+                >
+                  <span>Bem-vindo, Fulano!</span>
+                  <Link to="/profile">
+                    <Avatar />
+                  </Link>
+                </div>
+              </>
+            ) : (
+              <>
+                <Button onClick={redirect} ghost>
+                  Entrar
+                </Button>
+                <Button>Quero anunciar</Button>
+              </>
+            )}
           </div>
         </div>
       </div>
