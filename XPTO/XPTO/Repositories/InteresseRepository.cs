@@ -30,9 +30,9 @@ namespace XPTO.Repositories
             ctx.SaveChanges();
         }
 
-        public Interesse BuscarPorId(int id)
+        public List<Interesse> BuscarPorId(int id)
         {
-            return ctx.Interesse.FirstOrDefault(e => e.idAnuncio == id);
+            return ctx.Interesse.Where(e => e.idAnuncio == id).ToList();
         }
     }
 }

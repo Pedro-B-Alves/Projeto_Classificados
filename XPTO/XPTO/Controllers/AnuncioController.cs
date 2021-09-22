@@ -41,11 +41,19 @@ namespace XPTO.Controllers
         [Authorize]
         public IActionResult Post(Anuncio novoAnuncio)
         {
-            // Faz a chamada para o método
-            _anuncioRepository.Cadastrar(novoAnuncio);
+            try
+            {
+                // Faz a chamada para o método
+                _anuncioRepository.Cadastrar(novoAnuncio);
 
-            // Retorna um status code
-            return StatusCode(201);
+                // Retorna um status code
+                return StatusCode(201);
+
+            }
+            catch (Exception erro)
+            {
+                return BadRequest(erro);
+            }
         }
 
         [HttpPut("{id}")]

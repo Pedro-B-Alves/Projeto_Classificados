@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -49,7 +50,8 @@ namespace XPTO.Repositories
 
         public Anuncio BuscarPorId(int id)
         {
-            return ctx.Anuncio.FirstOrDefault(e => e.idAnuncio == id);
+            Anuncio anuncio = ctx.Anuncio.Include("Interesses").FirstOrDefault(x => x.idAnuncio == id);
+            return anuncio;
         }
 
         public void Cadastrar(Anuncio novoAnuncio)

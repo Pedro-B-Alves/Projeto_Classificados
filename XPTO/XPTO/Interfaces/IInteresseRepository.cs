@@ -10,7 +10,7 @@ namespace XPTO.Interfaces
     {
         void Cadastrar(Interesse novoInteresse);
 
-        Interesse BuscarPorId(int id);
+        List<Interesse> BuscarPorId(int id);
 
         void Deletar(int id);
     }

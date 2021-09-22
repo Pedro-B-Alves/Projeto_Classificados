@@ -10,6 +10,7 @@ namespace XPTO.Domains
     [Table("Anuncio")]
     public class Anuncio
     {
+
         [Key]
         // Define o auto-incremento
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -42,7 +43,7 @@ namespace XPTO.Domains
         [Required(ErrorMessage = "O id do usuário é obrigatório!")]
         // Define a chave estrangeira
         [ForeignKey("idUsuario")]
-        public int idUsuario { get; set; }
+        public int? idUsuario { get; set; }
 
     }
 }

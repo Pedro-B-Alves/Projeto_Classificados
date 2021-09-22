@@ -10,6 +10,7 @@ namespace XPTO.Domains
     [Table("Usuario")]
     public class Usuario
     {
+
         [Key]
         // Define o auto-incremento
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -61,9 +62,9 @@ namespace XPTO.Domains
         [Column(TypeName = "tinyint")]
         // Define que a propriedade é obrigatória
         [Required(ErrorMessage = "O tipo do usuário é obrigatório!")]
+        // Define a chave estrangeira
         [ForeignKey("idTipoUsuario")]
         public int idTipoUsuario { get; set; }
 
-        // Define a chave estrangeira
     }
 }

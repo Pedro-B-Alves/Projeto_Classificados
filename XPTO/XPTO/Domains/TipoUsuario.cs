@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace XPTO.Domains
 {
-    [Table("TiposUsuario")]
+    [Table("TipoUsuario")]
     public class TipoUsuario
     {
+
         [Key]
         // Define o auto-incremento
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -20,5 +21,6 @@ namespace XPTO.Domains
         // Define que a propriedade é obrigatória
         [Required(ErrorMessage = "O título do tipo de usuário é obrigatório!")]
         public string titulo { get; set; }
+
     }
 }

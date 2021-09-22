@@ -65,9 +65,15 @@ namespace XPTO.Contexts
                 entity.HasIndex(u => u.email).IsUnique();
             });
 
-            modelBuilder.Entity<Anuncio>().HasData(
-                new Anuncio { idAnuncio = 1, nome = "playstation 2", descricao = "Em boa condição", imagem = "", preco = 500.00, idUsuario = 1}
+            modelBuilder.Entity<Anuncio>(entity =>
+            {
+                entity.HasData(
+                    new Anuncio
+                    { idAnuncio = 1, nome = "playstation 2", descricao = "Em boa condição", imagem = "", preco = 500.00, idUsuario = 1 }
+                    
                 );
+
+            });
 
 
             modelBuilder.Entity<Interesse>().HasData(
