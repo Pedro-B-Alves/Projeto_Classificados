@@ -58,6 +58,12 @@
   border-radius: 12px;
   background-color: #ffffff;
   border: none;
+  outline: none;
+  padding: 24px;
+  font-size: 16px;
+  color: #2f2e41;
+  margin-bottom: 22px;
+  margin-top: 18px;
 }
 .leftContentArea h1 {
   font-family: 'Lemon', sans-serif;
@@ -79,3 +85,10 @@
   flex-direction: column;
   width: 600px;
 }
+.areaText {
+  display: flex;
+  justify-content: flex-start;
+  width: 448px;
+  margin-bottom: 48px;
+}
+

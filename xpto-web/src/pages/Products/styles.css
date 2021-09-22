@@ -1,3 +1,45 @@
-.teste {
-  color: red;
+.navigationArea {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0px;
+  align-items: center;
+}
+.navigationArea h1 {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+.contentCardsArea {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 1200px;
+  flex-wrap: wrap;
+}
+.buttonSeeMore {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.searchBar {
+  border-radius: 10px;
+  border: none;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 789px;
+  padding: 20px;
+}
+.searchBar input {
+  outline: none;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+}
+.searchImgsvg {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
 }
