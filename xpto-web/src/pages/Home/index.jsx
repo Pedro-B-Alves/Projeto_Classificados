@@ -7,6 +7,8 @@ import WomanImg from '../../img/WomanImg.png';
 import BackImg from '../../img/BackImg.png';
 import ManImg from '../../img/ManImg.png';
 import Ps4Img from '../../img/PlaystationImg.png';
+import WomanBuy from '../../img/BannerImg.svg';
+import { Button } from '../../components/Button';
 
 export function Home() {
   return (
@@ -16,7 +18,15 @@ export function Home() {
         <main>
           <section>
             <div className="banner">
-              <h1>teste</h1>
+              <div className="bannerContent">
+                <h1>
+                  O melhor site &amp; app {'\n'}
+                  para anunciar na internet!{' '}
+                </h1>
+                <hr />
+                <Button banner>Quero Anunciar!</Button>
+              </div>
+              <img src={WomanBuy} />
             </div>
           </section>
           <section className="section">
@@ -59,27 +69,27 @@ export function Home() {
                 <div className="cardsArea">
                   <AdCard
                     urlImage={Ps4Img}
-                    title="PS4 - slim"
+                    title="PS4 slim - 1tb"
                     location="Sao paulo - SP"
                     interestsNumber="10"
                     price="R$2.000,00"
                   ></AdCard>
                   <AdCard
                     urlImage={Ps4Img}
-                    title="PS4 - slim"
+                    title="PS4 slim - 1tb"
                     location="Sao paulo - SP"
                     interestsNumber="10"
                     price="R$2.000,00"
                   ></AdCard>
                   <AdCard
                     urlImage={Ps4Img}
-                    title="PS4 - slim"
+                    title="PS4 slim - 1tb"
                     location="Sao paulo - SP"
                     interestsNumber="10"
                     price="R$2.000,00"
                   ></AdCard>
-                </div>  
-                <div className="bottomAdCards" >
+                </div>
+                <div className="bottomAdCards">
                   <a>Ver mais...</a>
                 </div>
               </div>

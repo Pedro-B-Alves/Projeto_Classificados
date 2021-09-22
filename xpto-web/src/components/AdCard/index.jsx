@@ -3,8 +3,12 @@ import { AdCardWrapper } from './styles/AdCardWrapper';
 import HearthIcon from '../../img/HearthIcon.svg';
 
 export function AdCard({ urlImage, title, location, interestsNumber, price }) {
+  function adCardClick() {
+    console.log('teste');
+  }
+
   return (
-    <AdCardWrapper>
+    <AdCardWrapper onClick={adCardClick}>
       <div className="contentTextInfo">
         <img src={urlImage} className="image" />
         <h2>{title}</h2>
