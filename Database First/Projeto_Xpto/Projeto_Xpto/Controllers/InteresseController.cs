@@ -41,6 +41,14 @@ namespace XPTO.Controllers
             return Ok(_interesseRepository.BuscarPorId(id));
         }
 
+        [HttpGet("user/{id}")]
+        [Authorize]
+        public IActionResult userInterest(int id)
+        {
+            // Retorna a resposta da requisição fazendo a chamada para o método
+            return Ok(_interesseRepository.InteresseDoUsuario(id));
+        }
+
         [HttpDelete("{id}")]
         [Authorize]
         public IActionResult Delete(int id)

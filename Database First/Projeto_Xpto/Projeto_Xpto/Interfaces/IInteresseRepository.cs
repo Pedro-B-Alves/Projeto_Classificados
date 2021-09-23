@@ -12,6 +12,8 @@ namespace XPTO.Interfaces
 
         List<Interesse> BuscarPorId(int id);
 
+        List<Interesse> InteresseDoUsuario(int id);
+
         void Deletar(int id);
     }
 }

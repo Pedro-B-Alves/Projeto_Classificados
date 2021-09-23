@@ -37,6 +37,13 @@ namespace XPTO.Controllers
             return Ok(_anuncioRepository.BuscarPorId(id));
         }
 
+        [HttpGet("user/{id}")]
+        public IActionResult GetByIdUser(int id)
+        {
+            // Retorna a resposta da requisição fazendo a chamada para o método
+            return Ok(_anuncioRepository.BuscarPorIdUsuario(id));
+        }
+
         [HttpPost]
         [Authorize]
         public IActionResult Post(Anuncio novoAnuncio)

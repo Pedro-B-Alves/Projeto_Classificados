@@ -12,6 +12,8 @@ namespace XPTO.Interfaces
 
         Anuncio BuscarPorId(int id);
 
+        List<Anuncio> BuscarPorIdUsuario(int id);
+
         void Cadastrar(Anuncio novoAnuncio);
 
         void Atualizar(int id, Anuncio anuncioAtualizado);

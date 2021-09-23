@@ -222,6 +222,61 @@
 											"body": ""
 										}
 									]
+								},
+								{
+									"name": "/api/Anuncio/user/:id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Anuncio/user/2",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Anuncio",
+												"user",
+												"2"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Anuncio/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Anuncio",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
 								}
 							]
 						},
@@ -456,6 +511,71 @@
 											"name": "Success",
 											"originalRequest": {
 												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/Interesse/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"Interesse",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "text/plain"
+												}
+											],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/Interesse/user/:id",
+									"request": {
+										"auth": {
+											"type": "bearer",
+											"bearer": [
+												{
+													"key": "token",
+													"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmYW1pbHlfbmFtZSI6IlBlZHJvIiwiZW1haWwiOiJwZWRyb0BnbWFpbC5jb20iLCJ0ZWxlZm9uZSI6IjExOTEyMzQ1Njc2IiwiY2lkYWRlIjoiU8OjbyBQYXVsbyIsImVzdGFkbyI6IlPDo28gUGF1bG8iLCJpbWFnZW0iOiJodHRwczovL2dpdGh1Yi5jb20vUGVkcm8tQi1BbHZlcy5wbmciLCJqdGkiOiIzIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiMiIsInJvbGUiOiIyIiwiZXhwIjoxNjMyNDMwMTU1LCJpc3MiOiJQcm9qZXRvQ2xhc3NpZmljYWRvcyIsImF1ZCI6IlByb2pldG9DbGFzc2lmaWNhZG9zIn0.egDopKvN_14bP62f4A23Pgs_wghQXLofRXWi0-PzThg",
+													"type": "string"
+												}
+											]
+										},
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/Interesse/user/2",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"Interesse",
+												"user",
+												"2"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
 												"header": [],
 												"url": {
 													"raw": "{{baseUrl}}/api/Interesse/:id",

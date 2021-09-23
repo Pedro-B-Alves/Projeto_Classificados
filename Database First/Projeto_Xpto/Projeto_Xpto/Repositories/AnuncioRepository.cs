@@ -54,6 +54,11 @@ namespace XPTO.Repositories
             return anuncio;
         }
 
+        public List<Anuncio> BuscarPorIdUsuario(int id)
+        {
+            return ctx.Anuncios.Where(e => e.IdUsuario == id).ToList();
+        }
+
         public void Cadastrar(Anuncio novoAnuncio)
         {
             ctx.Anuncios.Add(novoAnuncio);

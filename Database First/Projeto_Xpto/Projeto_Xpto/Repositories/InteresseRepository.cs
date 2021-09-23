@@ -35,5 +35,10 @@ namespace XPTO.Repositories
         {
             return ctx.Interesses.Where(e => e.IdAnuncio == id).Include(e => e.IdUsuarioNavigation).Include(e => e.IdAnuncioNavigation).ToList();
         }
+
+        public List<Interesse> InteresseDoUsuario(int id)
+        {
+            return ctx.Interesses.Where(e => e.IdUsuario == id).Include(e => e.IdAnuncioNavigation).ToList();
+        }
     }
 }
