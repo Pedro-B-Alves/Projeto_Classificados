@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Text, Image, ScrollView } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import jwtDecode from 'jwt-decode';
+import { api } from '../../services/api';
 
 import { styles } from './styles';
 import PS4Img from '../../assets/ps4.png';
@@ -8,6 +11,8 @@ import { Button } from '../../components/Button';
 
 export function AdScreen({ route }) {
   const {
+    idAnuncio,
+    idOwner,
     adImage,
     title,
     price,
@@ -16,7 +21,40 @@ export function AdScreen({ route }) {
     adOwnerImage,
     adOwner,
   } = route.params;
-  const role = 'Comum';
+  const [userInfo, setUserInfo] = useState({});
+  const [interestsList, setInterestsList] = useState([]);
+  const [teste, setTeste] = useState({});
+
+  async function getInterestsList() {
+    const token = await AsyncStorage.getItem('userToken');
+    const tokenDecoded = jwtDecode(token);
+
+    if (token !== null) {
+      setUserInfo(tokenDecoded);
+    }
+
+    const { data, status } = await api.get(`/interesse/${idAnuncio}`, {
+      headers: {
+        Authorization: 'Bearer ' + token,
+      },
+    });
+
+    if (status === 200) {
+      console.log('sou os interesses', data);
+      const isInterested = data.find(
+        (x) => x.idUsuarioNavigation.idUsuario == tokenDecoded.jti
+      );
+      setInterestsList(data);
+      setTeste(isInterested);
+    }
+  }
+
+  useEffect(() => {
+    getInterestsList();
+  }, []);
+
+  console.log('AQUIIII', idOwner, userInfo.jti);
+  console.log('AQUIIII', teste);
 
   return (
     <View style={styles.container}>
@@ -44,52 +82,43 @@ export function AdScreen({ route }) {
           {JSON.stringify(description).replace(/['"]+/g, '')}
         </Text>
         <View style={styles.interest}>
-          <Text style={styles.subtitle}>Ficou interessado?</Text>
-          <Text style={styles.text}>
-            Basta clicar no botão abaixo e demonstrar seu interesse!
-          </Text>
-          <Button title="Demonstrar interesse!" ghost />
+          {userInfo.jti != idOwner && (
+            <>
+              <Text style={styles.subtitle}>Ficou interessado?</Text>
+              <Text style={styles.text}>
+                Basta clicar no botão abaixo e demonstrar seu interesse!
+              </Text>
+              <Button
+                title={
+                  teste === undefined
+                    ? 'Demonstrar interesse!'
+                    : 'Já está interessado!'
+                }
+                ghost
+              />
+            </>
+          )}
         </View>
 
-        {role !== 'Admin' ? (
+        {userInfo.jti != idOwner ? (
           // Pessoas interessadas (usuário comum)
           <View>
             <Text style={styles.interestedPeople}>Pessoas interessadas</Text>
             <View style={styles.interestedContainer}>
-              <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                <Avatar urlImage="https://github.com/gustavotolentino.png" />
-                <Text>Gustavo Tolentino</Text>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  marginTop: 24,
-                }}
-              >
-                <Avatar urlImage="https://github.com/vinixiii.png" />
-                <Text>Vinícius Figueiroa</Text>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  marginTop: 24,
-                }}
-              >
-                <Avatar urlImage="https://github.com/rafael-p.png" />
-                <Text>Rafael Porto</Text>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  marginTop: 24,
-                }}
-              >
-                <Avatar urlImage="https://github.com/renatoalvesdv.png" />
-                <Text>Renato Alves</Text>
-              </View>
+              {interestsList.map((interest) => (
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    marginTop: 6,
+                    marginBottom: 6,
+                  }}
+                  key={interest.idInteresse}
+                >
+                  <Avatar urlImage={interest.idUsuarioNavigation.imagem} />
+                  <Text>{interest.idUsuarioNavigation.nome}</Text>
+                </View>
+              ))}
             </View>
           </View>
         ) : (
@@ -97,52 +126,23 @@ export function AdScreen({ route }) {
           <View>
             <Text style={styles.interestedPeople}>Pessoas interessadas</Text>
             <View style={styles.interestedContainer}>
-              <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                <Avatar urlImage="https://github.com/gustavotolentino.png" />
-                <View>
-                  <Text>Gustavo Tolentino</Text>
-                  <Text>Tel: (11) 990909090</Text>
+              {interestsList.map((interest) => (
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    marginTop: 6,
+                    marginBottom: 6,
+                  }}
+                  key={interest.idInteresse}
+                >
+                  <Avatar urlImage={interest.idUsuarioNavigation.imagem} />
+                  <View>
+                    <Text>{interest.idUsuarioNavigation.nome}</Text>
+                    <Text>{interest.idUsuarioNavigation.telefone}</Text>
+                  </View>
                 </View>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  marginTop: 24,
-                }}
-              >
-                <Avatar urlImage="https://github.com/vinixiii.png" />
-                <View>
-                  <Text>Vinícius Figueiroa</Text>
-                  <Text>Tel: (11) 990909090</Text>
-                </View>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  marginTop: 24,
-                }}
-              >
-                <Avatar urlImage="https://github.com/vinixiii.png" />
-                <View>
-                  <Text>Rafael Porto</Text>
-                  <Text>Tel: (11) 990909090</Text>
-                </View>
-              </View>
-              <View
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  marginTop: 24,
-                }}
-              >
-                <Avatar urlImage="https://github.com/vinixiii.png" />
-                <View>
-                  <Text>Renato Alves</Text>
-                  <Text>Tel: (11) 990909090</Text>
-                </View>
-              </View>
+              ))}
             </View>
           </View>
         )}

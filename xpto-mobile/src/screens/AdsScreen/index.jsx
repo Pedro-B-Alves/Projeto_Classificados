@@ -27,6 +27,8 @@ export function AdsScreen({ navigation }) {
 
   function handleShowAd(item) {
     navigation.navigate('AdScreen', {
+      idAnuncio: item.idAnuncio,
+      idOwner: item.idUsuario,
       adImage: item.imagem,
       title: item.nome,
       price: item.preco,

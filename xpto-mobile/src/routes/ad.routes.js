@@ -72,10 +72,14 @@ export function AccountScreenRoutes() {
   return (
     <Navigator
       screenOptions={{
-        headerShown: false,
-        cardStyle: {
-          backgroundColor: 'transparent',
-          opacity: 1,
+        headerStyle: {
+          height: getStatusBarHeight() + 80,
+          backgroundColor: theme.colors.quaternary,
+        },
+        headerTintColor: theme.colors.darkText,
+        headerTitleStyle: {
+          fontFamily: theme.fonts.title600,
+          fontSize: 24,
         },
       }}
     >

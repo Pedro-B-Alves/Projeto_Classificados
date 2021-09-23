@@ -27,8 +27,8 @@ export function LoginScreen({ navigation }) {
       navigation.navigate('AuthRoutes');
 
       const { data, status } = await api.post('/login', {
-        email: 'pedro@gmail.com',
-        senha: 'pedro1234',
+        email: 'vini@cliente.com',
+        senha: 'vini1234',
       });
 
       // console.log(data.token);
