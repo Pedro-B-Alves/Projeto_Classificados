@@ -4,6 +4,7 @@ import { Home } from './pages/Home';
 import { Login } from './pages/Login';
 import { Products } from './pages/Products';
 import { AdPage } from './pages/AdPage';
+import { CreateAd } from './pages/CreateAd';
 import './index.css';
 import {
   BrowserRouter as Router,
@@ -17,8 +18,9 @@ export const routing = (
     <Switch>
       <Route exact path="/login" component={Login} />
       <Route exact path="/products" component={Products} />
-      <Route exact path="*" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route exact path="/adpage" component={AdPage} />
+      <Route exact path="/createad" component={CreateAd} />
     </Switch>
   </Router>
 );

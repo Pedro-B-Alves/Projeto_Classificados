@@ -11,7 +11,7 @@ export function Login() {
   const [password, setPassword] = useState('');
 
   const handleSignIn = (e) => {
-    e.preventDefault();
+    
 
     axios
       .post('https://localhost:5001/v1/account/signin', {
