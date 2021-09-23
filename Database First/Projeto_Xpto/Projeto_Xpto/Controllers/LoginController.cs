@@ -65,6 +65,8 @@ namespace XPTO.Controllers
 
                     new Claim("estado", usuarioBuscado.Estado),
 
+                    new Claim("imagem", usuarioBuscado.Imagem),
+
                     // Armazena na Claim o ID do usuário autenticado
                     new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.IdUsuario.ToString()),
 
