@@ -10,7 +10,9 @@ export function AdCard({ urlImage, title, location, interestsNumber, price }) {
   return (
     <AdCardWrapper onClick={adCardClick}>
       <div className="contentTextInfo">
-        <img src={urlImage} className="image" />
+        <div style={{ width: '360px', height: '360px' }}>
+          <img src={urlImage} className="image" alt="Imagem do produto" />
+        </div>
         <h2>{title}</h2>
         <p>{location}</p>
       </div>

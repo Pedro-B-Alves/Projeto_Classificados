@@ -1,10 +1,10 @@
 import React from 'react';
 import { AvatarWrapper } from './styles/AvatarWrapper';
 
-export function Avatar() {
+export function Avatar({ photo }) {
   return (
     <AvatarWrapper>
-      <img src="https://github.com/vinixiii.png" alt="foto da pessoa" />
+      <img src={photo} alt="Foto da pessoa" />
     </AvatarWrapper>
   );
 }

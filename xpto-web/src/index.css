@@ -4,12 +4,20 @@
   box-sizing: border-box;
 }
 
+#root,
+body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f6f6f6;
+  min-height: 100vh;
 }
 
 code {

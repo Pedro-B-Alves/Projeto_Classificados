@@ -31,7 +31,11 @@ export const AdCardWrapper = styled.div`
     margin-left: 4px;
   }
   .image {
-    margin: 24px;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    object-fit: cover;
+    border-radius: 38px;
   }
   .contentTextInfo p,
   .contentTextInfo h2 {

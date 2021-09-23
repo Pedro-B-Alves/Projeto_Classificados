@@ -5,12 +5,7 @@ import { Login } from './pages/Login';
 import { Products } from './pages/Products';
 import { AdPage } from './pages/AdPage';
 import './index.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 export const routing = (
   <Router>
@@ -18,7 +13,7 @@ export const routing = (
       <Route exact path="/" component={Home} />
       <Route exact path="/login" component={Login} />
       <Route exact path="/products" component={Products} />
-      <Route exact path="/ad" component={AdPage} />
+      <Route exact path="/ad/:id" component={AdPage} />
     </Switch>
   </Router>
 );

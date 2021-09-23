@@ -10,8 +10,10 @@ import Ps4Img from '../../img/PlaystationImg.png';
 import WomanBuy from '../../img/BannerImg.svg';
 import { Button } from '../../components/Button';
 import { Link } from 'react-router-dom';
+import { ads } from '../../mock/ads';
 
 export function Home() {
+  // const slicedArray = array.slice(0, n);
   return (
     <div>
       <Header />
@@ -68,27 +70,19 @@ export function Home() {
             <div className="homeContentBlockRow">
               <h2 style={{ marginBottom: '48px' }}>Anúncios recentes</h2>
               <div className="cardsArea">
-                <AdCard
-                  urlImage={Ps4Img}
-                  title="PS4 slim - 1tb"
-                  location="Sao paulo - SP"
-                  interestsNumber="10"
-                  price="R$2.000,00"
-                ></AdCard>
-                <AdCard
-                  urlImage={Ps4Img}
-                  title="PS4 slim - 1tb"
-                  location="Sao paulo - SP"
-                  interestsNumber="10"
-                  price="R$2.000,00"
-                ></AdCard>
-                <AdCard
-                  urlImage={Ps4Img}
-                  title="PS4 slim - 1tb"
-                  location="Sao paulo - SP"
-                  interestsNumber="10"
-                  price="R$2.000,00"
-                ></AdCard>
+                {ads.length > 0 &&
+                  ads.map((ad) => (
+                    <Link to={`/ad/${ad.id}`}>
+                      <AdCard
+                        key={ad.id}
+                        urlImage={ad.urlImage}
+                        title={ad.title}
+                        location={ad.location}
+                        interestsNumber="10"
+                        price={ad.price}
+                      />
+                    </Link>
+                  ))}
               </div>
               <div className="bottomAdCards">
                 <Link to="/login">Ver mais...</Link>

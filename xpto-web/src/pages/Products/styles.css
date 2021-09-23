@@ -14,7 +14,6 @@
   align-items: center;
   justify-content: space-between;
   row-gap: 24px;
-  width: 1200px;
   flex-wrap: wrap;
   margin-bottom: 48px;
 }
@@ -36,7 +35,7 @@
   display: flex;
   align-items: center;
   height: 60px;
-  width: 789px;
+  width: 65%;
   padding: 20px;
 }
 .searchBar input {
