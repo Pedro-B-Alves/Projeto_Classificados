@@ -10,7 +10,7 @@ export const InterestCardWrapper = styled.div`
   gap: 24px;
 
   span {
-    color: #333;
+    color: #2f2e41;
     font-weight: 600;
   }
 `;

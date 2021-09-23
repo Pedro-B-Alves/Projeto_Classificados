@@ -71,7 +71,7 @@ export function Home() {
               <h2 style={{ marginBottom: '48px' }}>Anúncios recentes</h2>
               <div className="cardsArea">
                 {ads.length > 0 &&
-                  ads.map((ad) => (
+                  ads.slice(0, 3).map((ad) => (
                     <Link to={`/ad/${ad.id}`}>
                       <AdCard
                         key={ad.id}
@@ -91,7 +91,6 @@ export function Home() {
           </div>
         </section>
       </main>
-
       <Footer />
     </div>
   );

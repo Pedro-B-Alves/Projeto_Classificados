@@ -8,7 +8,6 @@ export const AdPageWrapper = styled.div`
   .ad-page-container {
     width: 1200px;
     margin: 64px auto 0;
-    /* background-color: red; */
   }
 
   .ad-page-card {
@@ -22,7 +21,7 @@ export const AdPageWrapper = styled.div`
 
     .ad-page-left-content {
       width: 48%;
-      color: #333;
+      color: #2f2e41;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -65,7 +64,7 @@ export const AdPageWrapper = styled.div`
     }
 
     .ad-page-subtitle {
-      color: #333;
+      color: #2f2e41;
       font-size: 24px;
     }
   }

@@ -7,7 +7,7 @@ export const AdCardWrapper = styled.div`
   background-color: #ffffff;
   width: 360px;
   border-radius: 12px;
-  color: #333;
+  color: #2f2e41;
 
   .footerCard {
     display: flex;

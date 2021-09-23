@@ -8,7 +8,7 @@ export const FooterWrapper = styled.footer`
   height: 100px;
 
   h2 {
-    color: #333333;
+    color: #2F2E41333;
     font-size: 16px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
