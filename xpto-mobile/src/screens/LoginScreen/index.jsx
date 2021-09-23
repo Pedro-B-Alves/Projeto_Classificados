@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { View, Text, Image, TextInput } from 'react-native';
 import { Modalize } from 'react-native-modalize';
-import axios from 'axios';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import { styles } from './styles';
 import { Button } from '../../components/Button';
@@ -26,6 +26,13 @@ export function LoginScreen({ navigation }) {
 
       navigation.navigate('AuthRoutes');
 
+      const { data, status } = await api.post('/login', {
+        email: 'pedro@gmail.com',
+        senha: 'pedro1234',
+      });
+
+      // console.log(data.token);
+
       // const { data } = await axios.post(
       //   'https://localhost:5001/v1/account/signin',
       //   {
@@ -34,10 +41,12 @@ export function LoginScreen({ navigation }) {
       //   }
       // );
 
-      // if (data.sucesso === true) {
-      //   const token = data.data.token;
-      //   navigation.navigate('AuthRoutes');
-      // }
+      if (status === 200) {
+        const token = data.token;
+        await AsyncStorage.setItem('userToken', token);
+        console.log(token);
+        navigation.navigate('AuthRoutes');
+      }
 
       // console.log(data.sucesso);
     } catch (error) {

@@ -7,14 +7,21 @@ import { Avatar } from '../../components/Avatar';
 import { Button } from '../../components/Button';
 
 export function AdScreen({ route }) {
-  const { urlImage, title, price, location, description, adOwner } =
-    route.params;
+  const {
+    adImage,
+    title,
+    price,
+    location,
+    description,
+    adOwnerImage,
+    adOwner,
+  } = route.params;
   const role = 'Comum';
 
   return (
     <View style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <Image style={styles.image} source={{ uri: urlImage }} />
+        <Image style={styles.image} source={{ uri: adImage }} />
         <Text style={styles.title}>
           {JSON.stringify(title).replace(/['"]+/g, '')}
         </Text>
@@ -23,7 +30,7 @@ export function AdScreen({ route }) {
         </Text>
         <Text style={styles.subtitle}>Anunciante</Text>
         <View style={styles.ownerContainer}>
-          <Avatar urlImage="https://github.com/pedro-b-alves.png" />
+          <Avatar urlImage={adOwnerImage} />
           <Text style={styles.adOwner}>
             {JSON.stringify(adOwner).replace(/['"]+/g, '')}
           </Text>

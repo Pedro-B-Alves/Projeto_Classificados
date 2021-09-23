@@ -3,8 +3,11 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import { theme } from '../../src/global/styles/theme';
-import { HomeScreen } from '../screens/HomeScreen';
-import { AdsScreenRoutes, AccountScreenRoutes } from './ad.routes';
+import {
+  AdsScreenRoutes,
+  AccountScreenRoutes,
+  HomeScreenRoutes,
+} from './ad.routes';
 // import { AdsScreen } from '../screens/AdsScreen';
 // import { AccountScreen } from '../screens/AccountScreen';
 
@@ -22,7 +25,7 @@ export function AuthRoutes() {
       }}
       screenOptions={({ route }) => ({
         tabBarIcon: ({ color }) => {
-          if (route.name === 'HomeScreen') {
+          if (route.name === 'HomeScreenRoutes') {
             return (
               <MaterialCommunityIcons
                 name="home-outline"
@@ -53,8 +56,8 @@ export function AuthRoutes() {
       })}
     >
       <Screen
-        name="HomeScreen"
-        component={HomeScreen}
+        name="HomeScreenRoutes"
+        component={HomeScreenRoutes}
         options={{
           tabBarLabel: 'Início',
         }}
