@@ -25,7 +25,7 @@ export function Header() {
               <>
                 {/* <Link to="/">Inicio</Link> */}
                 <Link to="/products">Produtos</Link>
-                <Link to="/">Anunciar</Link>
+                <Link to="/createad">Anunciar</Link>
                 <div
                   className="header-avatar"
                   style={{
@@ -36,7 +36,7 @@ export function Header() {
                 >
                   <span>Bem-vindo, Fulano!</span>
                   <Link to="/profile">
-                    <Avatar />
+                    <Avatar photo="https://github.com/vinixiii.png" />
                   </Link>
                 </div>
               </>
