@@ -29,6 +29,7 @@ export const AdPageWrapper = styled.div`
 
       .ad-page-title {
         font-size: 36px;
+        /* text-transform: capitalize; */
       }
 
       .ad-page-price {

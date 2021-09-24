@@ -4,6 +4,8 @@ import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
 import { Button } from '../../components/Button';
 import { useHistory } from 'react-router';
+import { api } from '../../services/api';
+import { parseJwt } from '../../services/auth';
 
 export function CreateAd() {
   const history = useHistory();
@@ -11,10 +13,30 @@ export function CreateAd() {
   const [price, setPrice] = useState('');
   const [imgLink, setImgLink] = useState('');
   const [description, setDescription] = useState('');
+  const userInfo = localStorage.getItem('userToken') !== null && parseJwt();
 
-  const createAd = (e) => {
+  const createAd = async (e) => {
     e.preventDefault();
+    const token = localStorage.getItem('userToken');
+
     console.log(title, price, imgLink, description);
+
+    const { data, status } = await api.post(
+      'Anuncio',
+      {
+        idUsuario: userInfo.jti,
+        nome: title,
+        preco: price,
+        imagem: imgLink,
+        descricao: description,
+      },
+      {
+        headers: {
+          Authorization: 'Bearer ' + token,
+        },
+      }
+    );
+
     history.push('/products');
   };
 

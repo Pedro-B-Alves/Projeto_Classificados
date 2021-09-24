@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router';
 import { AdPageWrapper } from './styles/AdPageWrapper';
 import { Header } from '../../components/Header';
 import { Footer } from '../../components/Footer';
@@ -7,8 +8,47 @@ import { Button } from '../../components/Button';
 
 import HeartIcon from '../../img/HearthIcon.svg';
 import { InterestCard } from '../../components/InterestCard';
+import { api } from '../../services/api';
+import { parseJwt } from '../../services/auth';
 
 export function AdPage() {
+  const { id } = useParams();
+  const [adInfo, setAdInfo] = useState({});
+  const [interestsList, setInterestsList] = useState([]);
+  const userInfo = localStorage.getItem('userToken') !== null && parseJwt();
+
+  async function getAdInfo(id) {
+    const { data, status } = await api.get(`/anuncio/${id}`);
+
+    if (status === 200) {
+      setAdInfo(data);
+      console.log(data);
+    }
+  }
+
+  async function getInterests(id) {
+    const token = localStorage.getItem('userToken');
+
+    const { data, status } = await api.get(`/interesse/${id}`, {
+      headers: {
+        Authorization: 'Bearer ' + token,
+      },
+    });
+
+    if (status === 200) {
+      setInterestsList(data);
+      // const isInterested = data.find(
+      //   (x) => x.idUsuarioNavigation.idUsuario == tokenDecoded.jti
+      // );
+      console.log(data);
+    }
+  }
+
+  useEffect(() => {
+    getAdInfo(id);
+    getInterests(id);
+  }, [id]);
+
   return (
     <>
       <AdPageWrapper>
@@ -17,34 +57,31 @@ export function AdPage() {
           <div className="ad-page-container">
             <div className="ad-page-card">
               <div className="ad-page-left-content">
-                <h1 className="ad-page-title">PS4 Slim - 1Tb</h1>
-                <h2 className="ad-page-price">R$ 2000,00</h2>
+                <h1 className="ad-page-title">{adInfo.nome}</h1>
+                <h2 className="ad-page-price">R$ {adInfo.preco},00</h2>
                 <div>
                   <span className="ad-page-info-subtitle">Anunciante</span>
                   <div className="ad-page-avatar">
-                    <Avatar photo="https://github.com/vinixiii.png" />
-                    <span className="ad-page-ad-owner">Vinícius Figueiroa</span>
+                    <Avatar photo={adInfo.idUsuarioNavigation?.imagem} />
+                    <span className="ad-page-ad-owner">
+                      {adInfo.idUsuarioNavigation?.nome}
+                    </span>
                   </div>
                 </div>
                 <div className="ad-page-info-content">
                   <span className="ad-page-info-subtitle">Localização</span>
-                  <span>São Paulo</span>
+                  <span>{adInfo.idUsuarioNavigation?.cidade}</span>
                 </div>
                 <div className="ad-page-info-content">
                   <span className="ad-page-info-subtitle">Descrição</span>
-                  <span style={{ display: 'block' }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Amet omnis minima libero, odit quasi reiciendis inventore
-                    accusamus ipsum tempore commodi ex autem ratione suscipit
-                    doloremque odio necessitatibus, blanditiis recusandae a!
-                  </span>
+                  <span style={{ display: 'block' }}>{adInfo.descricao}</span>
                 </div>
               </div>
 
               <div className="ad-page-right-content">
                 <img
                   className="ad-page-image"
-                  src="https://github.com/vinixiii.png"
+                  src={adInfo.imagem}
                   alt="Imagem do produto"
                 />
               </div>
@@ -107,31 +144,40 @@ export function AdPage() {
                   </div>
                 </div>
 
-                <div
-                  style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '12px',
-                    marginTop: '48px',
-                  }}
-                >
-                  <InterestCard
-                    photo="https://github.com/vinixiii.png"
-                    name="Vinícius Figueiroa"
-                  />
-                  <InterestCard
-                    photo="https://github.com/vinixiii.png"
-                    name="Vinícius Figueiroa"
-                  />
-                  <InterestCard
-                    photo="https://github.com/vinixiii.png"
-                    name="Vinícius Figueiroa"
-                  />
-                  <InterestCard
-                    photo="https://github.com/vinixiii.png"
-                    name="Vinícius Figueiroa"
-                  />
-                </div>
+                {userInfo.jti !== adInfo.idUsuario?.toString() ? (
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '12px',
+                      marginTop: '48px',
+                    }}
+                  >
+                    {interestsList.map((interest) => (
+                      <InterestCard
+                        photo={interest.idUsuarioNavigation?.imagem}
+                        name={interest.idUsuarioNavigation?.nome}
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '12px',
+                      marginTop: '48px',
+                    }}
+                  >
+                    {interestsList.map((interest) => (
+                      <InterestCard
+                        photo={interest.idUsuarioNavigation?.imagem}
+                        name={interest.idUsuarioNavigation?.nome}
+                        phone={interest.idUsuarioNavigation?.telefone}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
             </div>
           </div>
