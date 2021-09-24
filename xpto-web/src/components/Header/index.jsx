@@ -6,7 +6,7 @@ import { Avatar } from '../Avatar';
 
 export function Header() {
   const history = useHistory();
-  const userLoggedIn = true;
+  const userLoggedIn = false;
 
   function redirect(e) {
     e.preventDefault();

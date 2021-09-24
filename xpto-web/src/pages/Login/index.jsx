@@ -3,6 +3,7 @@ import './styles.css';
 import { Link, useHistory } from 'react-router-dom';
 import LoginImg from '../../img/LoginImg.png';
 import { Button } from '../../components/Button';
+import { api } from '../../services/api';
 import axios from 'axios';
 
 export function Login() {
@@ -10,22 +11,18 @@ export function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSignIn = (e) => {
+  const handleSignIn = async (e) => {
     e.preventDefault();
 
-    axios
-      .post('https://localhost:5001/v1/account/signin', {
-        email: email,
-        senha: password,
-      })
-      .then((res) => {
-        if (res.data.mensagem === 'Logado com sucesso!') {
-          localStorage.setItem('token', res.data.token);
+    const { data, status } = await api.post('/login', {
+      email: email,
+      senha: password,
+    });
 
-          history.push('/products');
-        }
-      });
-    console.log(email, password);
+    if (status === 200) {
+      localStorage.setItem('userToken', data.token);
+      history.push('/products');
+    }
   };
 
   return (
